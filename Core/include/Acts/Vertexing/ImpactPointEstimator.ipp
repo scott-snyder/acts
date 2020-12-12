@@ -115,8 +115,14 @@ Acts::ImpactPointEstimator<input_track_t, propagator_t, propagator_options_t>::
                        vertexLocPlane.dot(yDirPlane)};
 
   // track covariance
+  SymMatrix2D myWeightXY;
   auto cov = trkParams->covariance();
-  SymMatrix2D myWeightXY = cov->block<2, 2>(0, 0).inverse();
+  if (cov) {
+    myWeightXY = cov->block<2, 2>(0, 0).inverse();
+  }
+  else {
+    myWeightXY.setIdentity();
+  }
 
   // 2-dim residual
   Vector2D myXYpos =
