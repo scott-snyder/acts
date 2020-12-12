@@ -1,0 +1,6 @@
+Bottom: f6761ff048e18bd8f5d0c9140659d8fd42dc9e09
+Top:    f6761ff048e18bd8f5d0c9140659d8fd42dc9e09
+Author: scott snyder <sss@karma>
+Date:   2020-12-12 00:32:36 -0500
+
+Fix uninitialized variable warning.
