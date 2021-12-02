@@ -1,0 +1,9 @@
+Bottom: b6befa8a4a4344e5178ac7b8f4c2ae0fb8ec29a6
+Top:    b6befa8a4a4344e5178ac7b8f4c2ae0fb8ec29a6
+Author: scott snyder <sss@karma>
+Date:   2021-12-02 16:23:56 -0500
+
+Add a couple missing const qualifiers.
+
+Fixes in passing warnings from clang12 in c++20 mode about comparision
+operator ambiguities.
