@@ -1,6 +1,6 @@
 // This file is part of the Acts project.
 //
-// Copyright (C) 2017-2018 CERN for the benefit of the Acts project
+// Copyright (C) 2017-2021 CERN for the benefit of the Acts project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -94,7 +94,7 @@ class GlobalNeighborHoodIndices {
       return *this;
     }
 
-    bool operator==(const iterator& it) {
+    bool operator==(const iterator& it) const {
       // We know when we've reached the end, so we don't need an end-iterator.
       // Sadly, in C++, there has to be one. Therefore, we special-case it
       // heavily so that it's super-efficient to create and compare to.
@@ -105,7 +105,7 @@ class GlobalNeighborHoodIndices {
       }
     }
 
-    bool operator!=(const iterator& it) { return !(*this == it); }
+    bool operator!=(const iterator& it) const { return !(*this == it); }
 
    private:
     std::array<NeighborHoodIndices::iterator, DIM> m_localIndicesIter;
