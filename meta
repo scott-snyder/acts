@@ -1,8 +1,8 @@
 Version: 1
-Previous: 607f86ff56722bef90943cd69b9f9f613fa83a53
-Head: b9469b8914f6a1bc47af0998eb7c9e8e20e4debc
+Previous: 1a6dcac86d7319201956421f5e701e8de2219acd
+Head: 9a74bea53db9e0b3ab5a97123764c910fefaa143
 Applied:
+  const: 9a74bea53db9e0b3ab5a97123764c910fefaa143
 Unapplied:
-  const: 1f6e477fc3d9b12f1b3507cb4782eb9efa31a0ec
 Hidden:
   warn: f8011f556ff044ab3751e869cc95ff48b047c27d
