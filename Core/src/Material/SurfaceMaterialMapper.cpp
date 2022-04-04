@@ -1,6 +1,6 @@
 // This file is part of the Acts project.
 //
-// Copyright (C) 2018-2020 CERN for the benefit of the Acts project
+// Copyright (C) 2018-2022 CERN for the benefit of the Acts project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -279,8 +279,6 @@ void Acts::SurfaceMaterialMapper::mapInteraction(
 
   // To remember the bins of this event
   using MapBin = std::pair<AccumulatedSurfaceMaterial*, std::array<size_t, 3>>;
-  using MaterialBin = std::pair<AccumulatedSurfaceMaterial*,
-                                std::shared_ptr<const ISurfaceMaterial>>;
   std::map<AccumulatedSurfaceMaterial*, std::array<size_t, 3>> touchedMapBins;
   std::map<AccumulatedSurfaceMaterial*, std::shared_ptr<const ISurfaceMaterial>>
       touchedMaterialBin;
