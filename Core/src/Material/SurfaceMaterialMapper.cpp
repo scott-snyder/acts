@@ -280,8 +280,6 @@ void Acts::SurfaceMaterialMapper::mapInteraction(
 
   // To remember the bins of this event
   using MapBin = std::pair<AccumulatedSurfaceMaterial*, std::array<size_t, 3>>;
-  using MaterialBin = std::pair<AccumulatedSurfaceMaterial*,
-                                std::shared_ptr<const ISurfaceMaterial>>;
   std::map<AccumulatedSurfaceMaterial*, std::array<size_t, 3>> touchedMapBins;
   std::map<AccumulatedSurfaceMaterial*, std::shared_ptr<const ISurfaceMaterial>>
       touchedMaterialBin;
