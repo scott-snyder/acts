@@ -1,0 +1,24 @@
+{
+  "version": 5,
+  "prev": "fc76efe73c1f958a0e82aa7dc48abba06c3ee173",
+  "head": "498af243755219486c26d32fb125b7ebf2557166",
+  "applied": [],
+  "unapplied": [
+    "const",
+    "warn2"
+  ],
+  "hidden": [
+    "warn"
+  ],
+  "patches": {
+    "const": {
+      "oid": "ae1712be820fb9269c38c8fc37039bcd87737386"
+    },
+    "warn2": {
+      "oid": "4544c4692a517bb2a6855672b15256b5da2441cf"
+    },
+    "warn": {
+      "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
+    }
+  }
+}
