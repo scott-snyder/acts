@@ -1,12 +1,12 @@
 {
   "version": 5,
-  "prev": "c5d4e1537c94524a9b7974809480b14bcfdc4631",
-  "head": "23e5021cf667c5bb5e050c11bd7883298bd78cd7",
-  "applied": [
+  "prev": "6fa4bca15c811b8c8baf79e3aa45cc5548faea3b",
+  "head": "7750c1d24714314e8de716b92ebcd4a92cc4e303",
+  "applied": [],
+  "unapplied": [
     "const",
     "warn2"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
