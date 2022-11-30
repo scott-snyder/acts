@@ -1,6 +1,6 @@
 // This file is part of the Acts project.
 //
-// Copyright (C) 2022 CERN for the benefit of the Acts project
+// Copyright (C) 2022, 2023 CERN for the benefit of the Acts project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -66,7 +66,7 @@ void Acts::to_json(nlohmann::json& j, const Acts::ProtoVolume& pv) {
 }
 
 void Acts::from_json(const nlohmann::json& j, Acts::ProtoVolume& pv) {
-  pv.name = j["name"];
+  pv.name = j["name"].get<std::string>();
   pv.extent = j["extent"];
 
   /// Helper method to read binnings
@@ -120,6 +120,6 @@ void Acts::to_json(nlohmann::json& j, const Acts::ProtoDetector& pd) {
 }
 
 void Acts::from_json(const nlohmann::json& j, Acts::ProtoDetector& pd) {
-  pd.name = j["name"];
+  pd.name = j["name"].get<std::string>();
   pd.worldVolume = j["world"];
 }
