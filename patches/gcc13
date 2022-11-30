@@ -1,0 +1,8 @@
+Bottom: a999923d9a19b7e5ce2c4948d3b5fcb6e4e760c2
+Top:    a999923d9a19b7e5ce2c4948d3b5fcb6e4e760c2
+Author: scott snyder <sss@karma>
+Date:   2022-11-30 11:27:32 -0500
+
+Fix compilation with gcc13.
+
+Missing #include <cstdint>.
