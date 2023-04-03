@@ -1,13 +1,13 @@
 {
   "version": 5,
-  "prev": "7c49fb2008af1525bc28c299b1fa59e3a2b053fd",
-  "head": "973c4d48f7498c22039e8b12e39ba2f506e6860c",
-  "applied": [
+  "prev": "ad400620800ce3e894061eb9248e3206f18f0894",
+  "head": "52723f7e7a2e6f9f59d6d7ca1cf183ca1cd43380",
+  "applied": [],
+  "unapplied": [
     "const",
     "warn2",
     "gcc13"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
