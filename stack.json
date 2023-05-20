@@ -1,10 +1,11 @@
 {
   "version": 5,
-  "prev": "0a77f6f7af665fe4fa6899c31b55b84263e2e0cb",
-  "head": "1772d2a1a96acfd918a538c14a9e24fe7ce7f50b",
-  "applied": [],
+  "prev": "e5956bca07bc2388beaa4bd298503560a471bbd8",
+  "head": "0cef7d16c23856626a4dae47c16582011daf572f",
+  "applied": [
+    "const"
+  ],
   "unapplied": [
-    "const",
     "warn2",
     "gcc13"
   ],
@@ -13,7 +14,7 @@
   ],
   "patches": {
     "const": {
-      "oid": "74fe7c94c4dcbe29d7a60f09fa8f8a76a546b62b"
+      "oid": "0cef7d16c23856626a4dae47c16582011daf572f"
     },
     "warn2": {
       "oid": "53ccd320acdab009b0ad75c53ba0dacd2e8b57d0"
