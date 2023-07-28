@@ -1,0 +1,23 @@
+Bottom: 3da262b848947c9808cefeeaf4e5aab77876772b
+Top:    3da262b848947c9808cefeeaf4e5aab77876772b
+Author: scott snyder <snyder@bnl.gov>
+Date:   2023-07-28 22:14:28 +0200
+
+Fix BinningValue conversions.
+
+In the ATLAS debug build, we're getting failures in the ActsEventCnv test:
+
+```
+ActsTrackingGeometrySvc                             FATAL in sysInitialize(): standard std::exception is caught
+ActsTrackingGeometrySvc                             ERROR [json.exception.type_error.302] type must be number, but is string
+ServiceManager                                      ERROR Unable to initialize service "ActsTrackingGeometrySvc"
+```
+
+This is because some compilation units in Plugins/Json try to convert
+a BinningValue without including the header UtilitiesJsonConverter.hpp
+which has the NLOHMANN_JSON_SERIALIZE_ENUM declaration for BinningValue.
+Thus, the conversion can work differently depending on the compilation unit,
+and the behavior can also depend on what gets inlined, so can differ
+between the optimized and debug build.
+
+This change adds the missing #includes and should fix this failure.
