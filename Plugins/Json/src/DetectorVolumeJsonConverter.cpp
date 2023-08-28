@@ -138,7 +138,7 @@ nlohmann::json Acts::DetectorVolumeJsonConverter::toJsonDetray(
       volume.volumeBounds().orientedSurfaces(volume.transform(gctx));
 
   // Write the portals - they will end up in the surface container
-  for (const auto& [ip, p] : enumerate(volume.portals())) {
+  for (const auto [ip, p] : enumerate(volume.portals())) {
     auto jPortalSurfaces =
         (toJsonDetray(gctx, *p, ip, volume, orientedSurfaces, detectorVolumes,
                       options.portalOptions));
