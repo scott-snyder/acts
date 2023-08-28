@@ -1,0 +1,8 @@
+Bottom: f13d37457c8ab966649e45852fe5fc1a1570f22e
+Top:    f13d37457c8ab966649e45852fe5fc1a1570f22e
+Author: scott snyder <sss@karma>
+Date:   2023-08-28 09:50:47 -0400
+
+Fix clang warning.
+
+Binding reference to temporary in range-for.
