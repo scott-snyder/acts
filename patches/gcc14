@@ -1,0 +1,8 @@
+Bottom: f386eb8726f534cd45f7c6aaa629b88686ec0f68
+Top:    f386eb8726f534cd45f7c6aaa629b88686ec0f68
+Author: scott snyder <sss@karma>
+Date:   2023-11-16 11:50:46 -0500
+
+Fix warnings with gcc14.
+
+Unused typedefs.
