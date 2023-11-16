@@ -396,12 +396,6 @@ class MultiEigenStepperLoop
   /// proxy internally holding a reference
   auto componentIterable(State& state) const {
     struct Iterator {
-      using difference_type = std::ptrdiff_t;
-      using value_type = ComponentProxy;
-      using reference = ComponentProxy;
-      using pointer = void;
-      using iterator_category = std::forward_iterator_tag;
-
       typename decltype(state.components)::iterator it;
       const State& s;
 
@@ -414,8 +408,6 @@ class MultiEigenStepperLoop
     };
 
     struct Iterable {
-      using iterator = Iterator;
-
       State& s;
 
       // clang-format off
@@ -433,12 +425,6 @@ class MultiEigenStepperLoop
   /// proxy internally holding a reference
   auto constComponentIterable(const State& state) const {
     struct ConstIterator {
-      using difference_type = std::ptrdiff_t;
-      using value_type = ConstComponentProxy;
-      using reference = ConstComponentProxy;
-      using pointer = void;
-      using iterator_category = std::forward_iterator_tag;
-
       typename decltype(state.components)::const_iterator it;
       const State& s;
 
@@ -451,7 +437,6 @@ class MultiEigenStepperLoop
     };
 
     struct Iterable {
-      using iterator = ConstIterator;
       const State& s;
 
       // clang-format off
