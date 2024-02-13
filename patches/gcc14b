@@ -1,0 +1,9 @@
+Bottom: b16495416df5d8dda273e5c7848985215daa0559
+Top:    b16495416df5d8dda273e5c7848985215daa0559
+Author: scott snyder <sss@karma>
+Date:   2024-02-12 19:50:49 -0500
+
+Fix compilation error with gcc14.
+
+Iterators need to have a category defined to be used with some
+STL algorithms.
