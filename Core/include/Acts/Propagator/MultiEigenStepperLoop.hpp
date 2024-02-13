@@ -1,6 +1,6 @@
 // This file is part of the Acts project.
 //
-// Copyright (C) 2021-2023 CERN for the benefit of the Acts project
+// Copyright (C) 2021-2024 CERN for the benefit of the Acts project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -396,6 +396,14 @@ class MultiEigenStepperLoop
   /// proxy internally holding a reference
   auto componentIterable(State& state) const {
     struct Iterator {
+      // Need to define an iterator category in order to use this
+      // with STL algorithms.  The [[maybe_unused]] attributes are to suppress
+      // bogus warnings from gcc14.
+      using iterator_category [[maybe_unused]] = std::forward_iterator_tag;
+      using value_type [[maybe_unused]] = ComponentProxy;
+      using difference_type [[maybe_unused]] = void;
+      using reference [[maybe_unused]] = void;
+
       typename decltype(state.components)::iterator it;
       const State& s;
 
@@ -425,6 +433,14 @@ class MultiEigenStepperLoop
   /// proxy internally holding a reference
   auto constComponentIterable(const State& state) const {
     struct ConstIterator {
+      // Need to define an iterator category in order to use this
+      // with STL algorithms.  The [[maybe_unused]] attributes are to suppress
+      // bogus warnings from gcc14.
+      using iterator_category [[maybe_unused]] = std::forward_iterator_tag;
+      using value_type [[maybe_unused]] = ConstComponentProxy;
+      using difference_type [[maybe_unused]] = void;
+      using reference [[maybe_unused]] = void;
+
       typename decltype(state.components)::const_iterator it;
       const State& s;
 
