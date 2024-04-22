@@ -5,6 +5,7 @@ if ( "${CMAKE_BUILD_TYPE}" STREQUAL "Debug" )
   set_source_files_properties(
      detail/CovarianceEngine.cpp
      detail/JacobianEngine.cpp
+     detail/PointwiseMaterialInteraction.cpp
      DIRECTORY ../..
      PROPERTIES
      COMPILE_FLAGS "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}"
