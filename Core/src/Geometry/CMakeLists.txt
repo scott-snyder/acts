@@ -3,11 +3,21 @@
 # inlining, even in debug builds.
 if ( "${CMAKE_BUILD_TYPE}" STREQUAL "Debug" )
   set_source_files_properties(
+     CylinderVolumeHelper.cpp
+     Extent.cpp
+     GenericCuboidVolumeBounds.cpp
+     Layer.cpp
+     LayerArrayCreator.cpp
      Polyhedron.cpp
+     SurfaceArrayCreator.cpp
+     SurfaceArrayCreator.cpp
+     TrackingGeometry.cpp
      TrackingVolume.cpp
+     TrackingVolumeArrayCreator.cpp
+     Volume.cpp
      DIRECTORY ../..
      PROPERTIES
-     COMPILE_FLAGS "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}"
+     COMPILE_FLAGS "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} -fvisibility-inlines-hidden "
      COMPILE_DEFINITIONS "FLATTEN" )
 endif()
 
