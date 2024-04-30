@@ -38,6 +38,10 @@ struct CovarianceHelper {
       if (isSemiPositive(covariance)) {
         return true;
       } else {
+#if __GNUC__ >= 14
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+#endif
         Eigen::JacobiSVD<CovMatrix_t> svdCov(
             covariance, Eigen::ComputeFullU | Eigen::ComputeFullV);
         CovMatrix_t S = svdCov.singularValues().asDiagonal();
@@ -45,6 +49,9 @@ struct CovarianceHelper {
         CovMatrix_t H = V * S * V.transpose();
         covariance = (covariance + H) / 2;
         nIteration++;
+#if __GNUC__ >= 14
+#pragma GCC diagnostic pop
+#endif
       }
     }
     /// check again after the iterations
