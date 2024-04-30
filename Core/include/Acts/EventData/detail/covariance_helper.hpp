@@ -1,6 +1,6 @@
 // This file is part of the Acts project.
 //
-// Copyright (C) 2019 CERN for the benefit of the Acts project
+// Copyright (C) 2019, 2024 CERN for the benefit of the Acts project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -37,6 +37,10 @@ struct covariance_helper {
       if (isSemiPositive(covariance)) {
         return true;
       } else {
+#if __GNUC__ >= 14
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+#endif
         Eigen::JacobiSVD<CovMatrix_t> svdCov(
             covariance, Eigen::ComputeFullU | Eigen::ComputeFullV);
         CovMatrix_t S = svdCov.singularValues().asDiagonal();
@@ -44,6 +48,9 @@ struct covariance_helper {
         CovMatrix_t H = V * S * V.transpose();
         covariance = (covariance + H) / 2;
         nIteration++;
+#if __GNUC__ >= 14
+#pragma GCC diagnostic pop
+#endif
       }
     }
     /// check again after the iterations
