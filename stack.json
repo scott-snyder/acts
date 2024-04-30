@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "dff6439a05b08b619eda102a9a4884818a17148f",
-  "head": "3fdb1fcf5f66581971cacfbe1233359c290d5fbf",
+  "prev": "d807d08132b949a47b2bde803d2f3ec47fe4a801",
+  "head": "1c723e9a6332b4d8ae7ff7ba15822ae1467aa266",
   "applied": [
     "const",
     "warn2",
@@ -9,8 +9,7 @@
     "clang",
     "gcc14",
     "gcc14b",
-    "gcc14c",
-    "refresh-temp"
+    "gcc14c"
   ],
   "unapplied": [],
   "hidden": [
@@ -36,10 +35,7 @@
       "oid": "03ef31aa3f1a994e41464188597cd1628361fa59"
     },
     "gcc14c": {
-      "oid": "cca343969073c3ad551a720d5da7821912d8fe29"
-    },
-    "refresh-temp": {
-      "oid": "3fdb1fcf5f66581971cacfbe1233359c290d5fbf"
+      "oid": "1c723e9a6332b4d8ae7ff7ba15822ae1467aa266"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
