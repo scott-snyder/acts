@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "7ec59e214c6304693d0739623a8d9a0f61682421",
-  "head": "9dfb47b8edeb8b9c75115462079bcb003dd3f031",
-  "applied": [],
-  "unapplied": [
+  "prev": "ccb2b0fdf739d1dd5210a11cff32923cde3f7c66",
+  "head": "ac9ce832ee3294f950320053dfcfb4d89518ec56",
+  "applied": [
     "const",
     "warn2",
     "gcc13",
@@ -12,30 +11,31 @@
     "gcc14b",
     "gcc14c"
   ],
+  "unapplied": [],
   "hidden": [
     "warn"
   ],
   "patches": {
     "const": {
-      "oid": "0aae02ee5a2a9732c48cd90b470707de7461ebae"
+      "oid": "0b31b077011e2016e7cce30a49614cc2344e3279"
     },
     "warn2": {
-      "oid": "e3e0e132e3c9700d50aa9b7d4a911c9c7dff683e"
+      "oid": "6a80f61ae42a6ffd9f09f87cec97de785140cf86"
     },
     "gcc13": {
-      "oid": "75e2238d596f045839d805fbb759d0b738d53b85"
+      "oid": "2fc9ffec899f5f5b384430c1f71dffd627043eca"
     },
     "clang": {
-      "oid": "c9da6880868a3642e308050ca55706bb9636b1d4"
+      "oid": "a87a43b1d37e01741baa83db238914b31a90188b"
     },
     "gcc14": {
-      "oid": "43fe724d5a4d83ab6bd4a882b83ebe69819787de"
+      "oid": "9cd11b7fe3f0491e40dbe85abaa375203f95f121"
     },
     "gcc14b": {
-      "oid": "03ef31aa3f1a994e41464188597cd1628361fa59"
+      "oid": "635611a9bf3a5c7412d3fe38a8e070d0ce58c8e8"
     },
     "gcc14c": {
-      "oid": "1c723e9a6332b4d8ae7ff7ba15822ae1467aa266"
+      "oid": "ac9ce832ee3294f950320053dfcfb4d89518ec56"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
