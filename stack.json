@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "2bdbeecd1cfd5f0780b5d97f5ffb925b2f5a2b4d",
-  "head": "83372bc80418f164d9eb71a0734a6738b8c61f78",
-  "applied": [
+  "prev": "82616f3185ef7defbf5ba2580607d5312d64fdac",
+  "head": "9dfb47b8edeb8b9c75115462079bcb003dd3f031",
+  "applied": [],
+  "unapplied": [
     "const",
     "warn2",
     "gcc13",
@@ -11,7 +12,6 @@
     "gcc14b",
     "gcc14c"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
