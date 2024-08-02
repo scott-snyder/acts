@@ -1,12 +1,11 @@
 {
   "version": 5,
-  "prev": "3a238cc722220f777284f57be4d02c52066fbd8e",
-  "head": "1b373cdf2eb75c0ba3efe9d1c463871677524199",
+  "prev": "2c52ea5863b86fd054f056e1d8842b2d8b58f1e9",
+  "head": "5504cc2b21d09cf1a66a4e11bbc8b8ef5bcc3482",
   "applied": [
     "const",
     "warn2",
     "gcc13",
-    "clang",
     "gcc14",
     "gcc14b",
     "gcc14c"
@@ -25,17 +24,14 @@
     "gcc13": {
       "oid": "cd272e162aa3c369dc0e9eb696f6f8097c92b7c3"
     },
-    "clang": {
-      "oid": "54473d71b35ee0525ec1ab9bd5e764e9de896d52"
-    },
     "gcc14": {
-      "oid": "245c507fa1db8857a77f1ea4615379d6043f3ed8"
+      "oid": "2fa7448534a59b786b7205ea1a28df8259f8083b"
     },
     "gcc14b": {
-      "oid": "bf516114d66d00a0056958770469aece3b6d6b7d"
+      "oid": "49ca0ea071331c3ed33305ed9937c375abf59caf"
     },
     "gcc14c": {
-      "oid": "1b373cdf2eb75c0ba3efe9d1c463871677524199"
+      "oid": "5504cc2b21d09cf1a66a4e11bbc8b8ef5bcc3482"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"

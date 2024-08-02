@@ -1,8 +1,0 @@
-Bottom: 84d35ca0221f2903b0dd5edd493f41c7f41f94f1
-Top:    84d35ca0221f2903b0dd5edd493f41c7f41f94f1
-Author: scott snyder <sss@karma>
-Date:   2023-08-28 09:50:47 -0400
-
-Fix clang warning.
-
-Binding reference to temporary in range-for.
