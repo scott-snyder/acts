@@ -34,7 +34,7 @@ void VolumePlacementBase::makePortalsAlignable(
         "registered before");
   }
 
-  for (const auto& [portalIdx, portalSurface] : enumerate(portalsToAlign)) {
+  for (const auto [portalIdx, portalSurface] : enumerate(portalsToAlign)) {
     if (portalSurface->surfacePlacement() != nullptr) {
       throw std::invalid_argument(std::format(
           "VolumePlacementBase::makePortalsAlignable() - The {:}-th surface is "
