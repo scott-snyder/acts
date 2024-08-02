@@ -77,7 +77,7 @@ void CartesianSpacePointGrid::extend(
   ACTS_VERBOSE("Inserting " << spacePoints.size()
                             << " space points to the grid");
 
-  for (const ConstSpacePointProxy2& sp : spacePoints) {
+  for (const ConstSpacePointProxy2 sp : spacePoints) {
     insert(sp);
   }
 }
