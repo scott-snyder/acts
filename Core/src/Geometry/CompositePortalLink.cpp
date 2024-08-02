@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2024 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -229,7 +229,7 @@ std::unique_ptr<GridPortalLink> CompositePortalLink::makeGrid(
                  (itransform * b->surface().transform(gctx)).translation()[eZ];
         });
 
-    for (const auto& [i, child] : enumerate(trivialLinks)) {
+    for (const auto [i, child] : enumerate(trivialLinks)) {
       const auto& bounds =
           dynamic_cast<const CylinderBounds&>(child->surface().bounds());
       Transform3 ltransform = itransform * child->surface().transform(gctx);
@@ -247,7 +247,7 @@ std::unique_ptr<GridPortalLink> CompositePortalLink::makeGrid(
     Axis axis{AxisBound, edges};
 
     auto grid = GridPortalLink::make(m_surface, m_direction, std::move(axis));
-    for (const auto& [i, child] : enumerate(trivialLinks)) {
+    for (const auto [i, child] : enumerate(trivialLinks)) {
       grid->atLocalBins({i + 1}) = &child->volume();
     }
 
@@ -273,7 +273,7 @@ std::unique_ptr<GridPortalLink> CompositePortalLink::makeGrid(
              boundsB.get(RadialBounds::eMinR);
     });
 
-    for (const auto& [i, child] : enumerate(trivialLinks)) {
+    for (const auto [i, child] : enumerate(trivialLinks)) {
       const auto& bounds =
           dynamic_cast<const RadialBounds&>(child->surface().bounds());
 
@@ -288,7 +288,7 @@ std::unique_ptr<GridPortalLink> CompositePortalLink::makeGrid(
     Axis axis{AxisBound, edges};
 
     auto grid = GridPortalLink::make(m_surface, m_direction, std::move(axis));
-    for (const auto& [i, child] : enumerate(trivialLinks)) {
+    for (const auto [i, child] : enumerate(trivialLinks)) {
       grid->atLocalBins({i + 1}) = &child->volume();
     }
 
