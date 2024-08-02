@@ -137,7 +137,7 @@ Result<Vector3> HoughVertexFinder::findHoughVertex(
         HoughTransformUtils::binCenter(minZ, maxZ, numZBins, zBin));
   }
 
-  for (const auto& sp : spacePoints) {
+  for (const auto sp : spacePoints) {
     double sp_invr = 1. / std::hypot((sp.x() - vtxOldX), (sp.y() - vtxOldY));
     if (sp.z() > maxZ) {
       if ((sp.z() - maxZ + 0.5 * zBinSize) * sp_invr > maxCotTheta) {
