@@ -1,0 +1,6 @@
+Bottom: 906d508d1558d4ce41cea0cb98c601eb583ac946
+Top:    906d508d1558d4ce41cea0cb98c601eb583ac946
+Author: scott snyder <sss@karma>
+Date:   2024-08-02 15:53:09 -0400
+
+Fix clang warnings: Binding references to temporaries in range-for.
