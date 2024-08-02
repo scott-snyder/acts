@@ -271,7 +271,7 @@ void CylindricalSpacePointKDTreeBuilder::insert(SpacePointIndex index,
 
 void CylindricalSpacePointKDTreeBuilder::extend(
     const SpacePointContainer2::ConstRange &spacePoints) {
-  for (const auto &sp : spacePoints) {
+  for (const auto sp : spacePoints) {
     insert(sp);
   }
 }
