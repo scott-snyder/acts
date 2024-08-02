@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016-2024 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -80,7 +80,7 @@ Acts::Experimental::DetectorVolumeBuilder::construct(
         std::move(surfacesUpdater));
   }
   // All portals are defined and build the current shell
-  for (const auto& [ip, p] : enumerate(dVolume->portalPtrs())) {
+  for (const auto [ip, p] : enumerate(dVolume->portalPtrs())) {
     portalContainer[ip] = p;
   }
 
