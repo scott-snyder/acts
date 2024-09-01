@@ -1,8 +1,0 @@
-Bottom: 60351eed638f5e759edccf6c18ec1304a81c4257
-Top:    60351eed638f5e759edccf6c18ec1304a81c4257
-Author: scott snyder <sss@karma>
-Date:   2023-11-16 11:50:46 -0500
-
-Fix warnings with gcc14.
-
-Unused typedefs.

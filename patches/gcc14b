@@ -1,9 +1,0 @@
-Bottom: 60351eed638f5e759edccf6c18ec1304a81c4257
-Top:    60351eed638f5e759edccf6c18ec1304a81c4257
-Author: scott snyder <sss@karma>
-Date:   2024-02-12 19:50:49 -0500
-
-Fix compilation error with gcc14.
-
-Iterators need to have a category defined to be used with some
-STL algorithms.
