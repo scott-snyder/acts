@@ -1,0 +1,6 @@
+Bottom: 56766d159c05c15f36ce543a9a16d88aa5cde744
+Top:    56766d159c05c15f36ce543a9a16d88aa5cde744
+Author: sss <sss@karma>
+Date:   2024-10-01 09:37:13 -0400
+
+Avoid two source files with the same name in Core.
