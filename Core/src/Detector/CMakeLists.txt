@@ -19,7 +19,7 @@ target_sources(
         DetectorVolumeBuilder.cpp
         IndexedRootVolumeFinderBuilder.cpp
         LayerStructureBuilder.cpp
-        Portal.cpp
+        DetPortal.cpp
         PortalGenerators.cpp
         ProtoDetector.cpp
         GeometryIdGenerator.cpp
