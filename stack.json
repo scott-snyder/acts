@@ -1,15 +1,15 @@
 {
   "version": 5,
-  "prev": "2900e114efcb5d3e3e6fe3f776614d4b7c3d308b",
-  "head": "356415a321fefa27ff9a0171dfe5eb9567d949a3",
-  "applied": [
+  "prev": "8dd0e5cb557ed7200a4ae642861121c7feb423bd",
+  "head": "2728adc1c0a0b63d41df57eb1b4489796e16f22a",
+  "applied": [],
+  "unapplied": [
     "const",
     "warn2",
     "gcc13",
     "gcc14c",
     "clang"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
