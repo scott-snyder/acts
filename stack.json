@@ -1,14 +1,13 @@
 {
   "version": 5,
-  "prev": "2165f3bc9a747f6c54c764c1e3754595607ffa10",
-  "head": "769b5355ad3b038af9664030e3afb154f1d675e2",
+  "prev": "5b487a622cae0bfb238faccf4be9f49002829f7b",
+  "head": "9612efce719400fc6adaa8620ff52a9c93ae0805",
   "applied": [
     "const",
     "warn2",
     "gcc13",
     "gcc14c",
-    "clang",
-    "refresh-temp"
+    "clang"
   ],
   "unapplied": [
     "rename"
@@ -30,10 +29,7 @@
       "oid": "ebdcc5c1756de396bc28a3791acb016011e58b5a"
     },
     "clang": {
-      "oid": "02feef6ffec4900ff313f9494c36248876ced293"
-    },
-    "refresh-temp": {
-      "oid": "769b5355ad3b038af9664030e3afb154f1d675e2"
+      "oid": "9612efce719400fc6adaa8620ff52a9c93ae0805"
     },
     "rename": {
       "oid": "aaeec9a11190d36549d3fb04b8012ea10131c2c9"
