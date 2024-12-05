@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "5aa29ef9cc960cbbbd0a82ed8e8e8f547b27aa2f",
-  "head": "0a6b5155e29e3b755bf351b8a76067fff9b4214b",
-  "applied": [],
-  "unapplied": [
+  "prev": "02d851e6b0c78a91c206b2353e6e8e1bda1312a2",
+  "head": "5361481792e03793535049bea6af20d734489ec5",
+  "applied": [
     "const",
     "warn2",
     "gcc13",
@@ -11,27 +10,28 @@
     "clang",
     "rename"
   ],
+  "unapplied": [],
   "hidden": [
     "warn"
   ],
   "patches": {
     "const": {
-      "oid": "c5c466c29c6dcdec93e5ffeeca38ea3635dbc477"
+      "oid": "381c7fc6ac413b97a52be20707738e0b2f2dfda7"
     },
     "warn2": {
-      "oid": "7b1615cfc1719aef61a094d3a48a680697ff16bf"
+      "oid": "a623231198fcb3ae094e9852451daa48d7e92243"
     },
     "gcc13": {
-      "oid": "a78ef897b866c1ae143742ecf29632d265812baf"
+      "oid": "ad123be91fa7d8af744d99cc66dc1f783518f26b"
     },
     "gcc14c": {
-      "oid": "ebdcc5c1756de396bc28a3791acb016011e58b5a"
+      "oid": "dcf9ae54912e2ee2b5a9ca83326bb12f81a49337"
     },
     "clang": {
-      "oid": "f4a3c8cb2e9acb87e064a26812bf0e644b44b164"
+      "oid": "a4bc593cad1e289f2d4f51eb4e59922c6948db27"
     },
     "rename": {
-      "oid": "6f59e28fe0aad036cfa48381bd8a2aaa0d52ff1b"
+      "oid": "5361481792e03793535049bea6af20d734489ec5"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
