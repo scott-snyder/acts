@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2024, 2025 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -110,7 +110,7 @@ inline std::pair<double, double> generateBoundDirection(
   // draw from cos(theta) instead of theta. see e.g.
   // https://mathworld.wolfram.com/SpherePointPicking.html
   // Get cosThetaMin from thetaMax and vice versa, because cos is
-  // monothonical decreasing between [0, pi]
+  // monotonically decreasing between [0, pi]
   double cosThetaMin = std::cos(options.thetaMax);
   // ensure upper bound is included. see e.g.
   // https://en.cppreference.com/cpp/numeric/random/uniform_real_distribution
