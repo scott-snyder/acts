@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2024 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -106,15 +106,15 @@ inline std::pair<double, double> generateBoundDirection(
   // since we want to draw the direction uniform on the unit sphere, we must
   // draw from cos(theta) instead of theta. see e.g.
   // https://mathworld.wolfram.com/SpherePointPicking.html
-  double cosThetaMin = std::cos(options.thetaMin);
+  double cosThetaMin = std::cos(options.thetaMax);
   // ensure upper bound is included. see e.g.
   // https://en.cppreference.com/w/cpp/numeric/random/uniform_real_distribution
-  double cosThetaMax = std::nextafter(std::cos(options.thetaMax),
+  double cosThetaMax = std::nextafter(std::cos(options.thetaMin),
                                       std::numeric_limits<double>::max());
 
   // in case we force uniform eta generation
-  double etaMin = Acts::AngleHelpers::etaFromTheta(options.thetaMin);
-  double etaMax = Acts::AngleHelpers::etaFromTheta(options.thetaMax);
+  double etaMin = Acts::AngleHelpers::etaFromTheta(options.thetaMax);
+  double etaMax = Acts::AngleHelpers::etaFromTheta(options.thetaMin);
 
   UniformReal phiDist(options.phiMin, options.phiMax);
   UniformReal cosThetaDist(cosThetaMin, cosThetaMax);
