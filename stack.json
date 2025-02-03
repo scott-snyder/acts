@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "f2c668bc04e2b0122b65451783465a8dc294ece8",
-  "head": "76a66b035377e638a601c1c5cd5867cde2d0809d",
+  "prev": "e8c0a71c9e9837cb00be930457ec3001878cc2c2",
+  "head": "4a806a67ffe08ba059879160d3c595a85a7f2a73",
   "applied": [
     "const",
     "warn2",
@@ -9,8 +9,7 @@
     "gcc14c",
     "clang",
     "rename",
-    "urand",
-    "refresh-temp"
+    "urand"
   ],
   "unapplied": [
     "bounds"
@@ -38,10 +37,7 @@
       "oid": "d6c9ca1716e5670a0dc9ee740afd1a0e0dcf3555"
     },
     "urand": {
-      "oid": "1319897eb4d1c1d6ee16d26e678013b5d7fcf69d"
-    },
-    "refresh-temp": {
-      "oid": "76a66b035377e638a601c1c5cd5867cde2d0809d"
+      "oid": "4a806a67ffe08ba059879160d3c595a85a7f2a73"
     },
     "bounds": {
       "oid": "62e3d341e2fc700ce59236d2a7d53829fd82999f"
