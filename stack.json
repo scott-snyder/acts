@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "e8c0a71c9e9837cb00be930457ec3001878cc2c2",
+  "prev": "92905b24390c50c4144e14a22c9511e11b214422",
   "head": "4a806a67ffe08ba059879160d3c595a85a7f2a73",
   "applied": [
     "const",
@@ -9,7 +9,7 @@
     "gcc14c",
     "clang",
     "rename",
-    "urand"
+    "typo"
   ],
   "unapplied": [
     "bounds"
@@ -36,7 +36,7 @@
     "rename": {
       "oid": "d6c9ca1716e5670a0dc9ee740afd1a0e0dcf3555"
     },
-    "urand": {
+    "typo": {
       "oid": "4a806a67ffe08ba059879160d3c595a85a7f2a73"
     },
     "bounds": {
