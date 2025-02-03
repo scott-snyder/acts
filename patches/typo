@@ -3,9 +3,4 @@ Top:    77596fbff5d36510c22c00f5919a2aaf43638af0
 Author: sss <sss@karma>
 Date:   2024-12-07 15:30:07 -0500
 
-Fix use of uniform random generators.
-
-For UniformReal r (a, b), we must have a <= b.
-But this was violated in a couple places.
-Remember that for 0 < theta < pi,
-if theta1 < theta2, then cos(theta1) > cos(theta2).
+Fix typo in comments.

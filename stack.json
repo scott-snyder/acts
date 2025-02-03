@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "92905b24390c50c4144e14a22c9511e11b214422",
-  "head": "4a806a67ffe08ba059879160d3c595a85a7f2a73",
+  "prev": "2f0ccad5dac9b29fec84f87c6594848e1185a8e7",
+  "head": "ea92447c3c65e490f563bb865d9daf153d31b375",
   "applied": [
     "const",
     "warn2",
@@ -37,7 +37,7 @@
       "oid": "d6c9ca1716e5670a0dc9ee740afd1a0e0dcf3555"
     },
     "typo": {
-      "oid": "4a806a67ffe08ba059879160d3c595a85a7f2a73"
+      "oid": "ea92447c3c65e490f563bb865d9daf153d31b375"
     },
     "bounds": {
       "oid": "62e3d341e2fc700ce59236d2a7d53829fd82999f"
