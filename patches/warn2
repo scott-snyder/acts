@@ -1,8 +1,0 @@
-Bottom: ffb7f578f17797acf35520ad945789a7a22b54ab
-Top:    9658d8f435f25578dd0b1995e9a2993e2d268bee
-Author: scott snyder <sss@karma>
-Date:   2022-04-04 12:28:32 -0400
-
-Fix compilation warning.
-
-Unused value.
