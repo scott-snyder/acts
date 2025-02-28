@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2025 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -663,8 +663,10 @@ class TrackProxy {
 
     stemIndex() = tipIndex();
 
-    // @TODO: Maybe refactor to not need this variable if invertJacobians == false
-    BoundMatrix nextJacobian;
+    std::optional<BoundMatrix> nextJacobian;
+    if (invertJacobians) {
+      nextJacobian.emplace ();
+    }
 
     while (current != kInvalid) {
       auto ts = m_container->trackStateContainer().getTrackState(current);
@@ -674,10 +676,10 @@ class TrackProxy {
       if (invertJacobians) {
         if (next != kInvalid) {
           BoundMatrix curJacobian = ts.jacobian();
-          ts.jacobian() = nextJacobian.inverse();
-          nextJacobian = curJacobian;
+          ts.jacobian() = nextJacobian->inverse();
+          *nextJacobian = curJacobian;
         } else {
-          nextJacobian = ts.jacobian();
+          *nextJacobian = ts.jacobian();
           ts.jacobian().setZero();
         }
       }
