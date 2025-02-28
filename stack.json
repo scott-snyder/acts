@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "b3dbdea0b61e580df4a31b0346aaa7bac5f94595",
-  "head": "ba03e183109ad07def665100fdccbe454159e7e3",
+  "prev": "023d5b53e9d148ae6725c4441235c578d28292c9",
+  "head": "22fc38fb41e3c1630f8d82c23f7d06b0e806dbdd",
   "applied": [
     "const",
     "gcc13",
@@ -10,7 +10,8 @@
     "rename",
     "typo",
     "bounds",
-    "warn2"
+    "warn2",
+    "optjac"
   ],
   "unapplied": [],
   "hidden": [
@@ -40,6 +41,9 @@
     },
     "warn2": {
       "oid": "ba03e183109ad07def665100fdccbe454159e7e3"
+    },
+    "optjac": {
+      "oid": "22fc38fb41e3c1630f8d82c23f7d06b0e806dbdd"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"

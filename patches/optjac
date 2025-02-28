@@ -1,0 +1,8 @@
+Bottom: 38fc5319ee9fcca93666d154875c3356ee63ed7d
+Top:    38fc5319ee9fcca93666d154875c3356ee63ed7d
+Author: sss <sss@karma>
+Date:   2025-02-28 15:26:11 -0500
+
+Make nextJacobian optional in TrackProxy::reverseTrackStates.
+
+In passing, avoids a warning from gcc15 about using uninitialized data.
