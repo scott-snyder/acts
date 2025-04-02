@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "55f7f9de7127bb1e831ee9e9aca0152757f66545",
-  "head": "39928214e4de2bc92133429ee7e4b74841cba798",
-  "applied": [
+  "prev": "cff9b47574aebf333ed079274a8eba8106ed6102",
+  "head": "09225b0d0bba24d57a696e347e3027b39404bb75",
+  "applied": [],
+  "unapplied": [
     "const",
     "gcc13",
     "gcc14c",
@@ -13,7 +14,6 @@
     "warn2",
     "optjac"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
