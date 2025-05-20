@@ -1,6 +1,0 @@
-Bottom: 5ccc259a14a4b3b95b3bbcfd19e70c4da272f120
-Top:    90f30d2dd78f7865ef71b5396a8d95a5d6d38c4a
-Author: sss <sss@karma>
-Date:   2024-12-12 11:16:33 -0500
-
-Fix out-of-bounds vector reference.
