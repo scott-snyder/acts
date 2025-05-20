@@ -1,10 +1,11 @@
 {
   "version": 5,
-  "prev": "ffa8da86aa4d63f7e7990b9cea5507cf633cc760",
-  "head": "2e728793d229a81a7a1bbdd54a72bc32bebf87c9",
+  "prev": "d5e6eb28f79e4678f7a0da5b8f48e59b9b041883",
+  "head": "96540c080c277587141ff51df3b60fcac8c1c27d",
   "applied": [
     "context",
-    "flatten"
+    "flatten",
+    "flatten2"
   ],
   "unapplied": [],
   "hidden": [],
@@ -14,6 +15,9 @@
     },
     "flatten": {
       "oid": "2e728793d229a81a7a1bbdd54a72bc32bebf87c9"
+    },
+    "flatten2": {
+      "oid": "96540c080c277587141ff51df3b60fcac8c1c27d"
     }
   }
 }
