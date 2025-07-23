@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2025 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -114,6 +114,8 @@ class CylinderProtoDesignator : public DesignatorBase {
     }
   }
 
+  using DesignatorBase::merged;
+
   std::unique_ptr<DesignatorBase> merged(
       const DesignatorBase& other) const override {
     return other.merged(*this);
@@ -221,6 +223,8 @@ class CuboidProtoDesignator : public DesignatorBase {
     }
   }
 
+  using DesignatorBase::merged;
+
   std::unique_ptr<DesignatorBase> merged(
       const DesignatorBase& other) const override {
     return other.merged(*this);
@@ -315,6 +319,8 @@ class HomogeneousMaterialDesignator : public DesignatorBase {
       os << "<br/> at: " << face;
     }
   }
+
+  using DesignatorBase::merged;
 
   std::unique_ptr<DesignatorBase> merged(
       const DesignatorBase& other) const override {
