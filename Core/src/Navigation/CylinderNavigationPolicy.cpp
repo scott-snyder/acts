@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2025 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -123,7 +123,7 @@ CylinderNavigationPolicy::CylinderNavigationPolicy(const GeometryContext& gctx,
   }
 
   ACTS_VERBOSE("Portal assignment:");
-  for (const auto& [i, portal] : enumerate(m_portals)) {
+  for (const auto [i, portal] : enumerate(m_portals)) {
     auto face = static_cast<CylinderVolumeBounds::Face>(i);
 
     if (portal == nullptr) {
