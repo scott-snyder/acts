@@ -98,6 +98,8 @@ class BinnedSurfaceMaterial : public ISurfaceMaterial {
   /// @return Reference to the complete matrix of material slabs
   const MaterialSlabMatrix& fullMaterial() const;
 
+  using ISurfaceMaterial::materialSlab;
+
   /// @copydoc ISurfaceMaterial::materialSlab(const Vector2&) const
   const MaterialSlab& materialSlab(const Vector2& lp) const final;
 
