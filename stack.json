@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "8b77056d2c23a5aab53c0ae398d903634fb5664b",
-  "head": "34b4c714d107bf6d9e4d61883fdd3977491ee0ea",
+  "prev": "368de4302c5aaf0697d2886500717c7f5bc8a787",
+  "head": "71256960c63e3af7ed2eb613f45667fb922ade86",
   "applied": [
     "const",
     "gcc13",
@@ -11,7 +11,8 @@
     "typo",
     "warn2",
     "optjac",
-    "warn3"
+    "warn3",
+    "eigen"
   ],
   "unapplied": [],
   "hidden": [
@@ -44,6 +45,9 @@
     },
     "warn3": {
       "oid": "34b4c714d107bf6d9e4d61883fdd3977491ee0ea"
+    },
+    "eigen": {
+      "oid": "71256960c63e3af7ed2eb613f45667fb922ade86"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
