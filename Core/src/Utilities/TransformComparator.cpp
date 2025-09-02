@@ -1,6 +1,6 @@
 // This file is part of the ACTS project.
 //
-// Copyright (C) 2016 CERN for the benefit of the ACTS project
+// Copyright (C) 2016, 2025 CERN for the benefit of the ACTS project
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -14,8 +14,8 @@ TransformComparator::TransformComparator(const double transTolerance,
     : m_tolTrans{transTolerance}, m_tolRot{rotTolerance} {}
 int TransformComparator::compare(const Acts::RotationMatrix3& a,
                                  const Acts::RotationMatrix3& b) const {
-  const Acts::Vector3 anglesA = a.eulerAngles(2, 1, 0);
-  const Acts::Vector3 anglesB = b.eulerAngles(2, 1, 0);
+  const Acts::Vector3 anglesA = a.canonicalEulerAngles(2, 1, 0);
+  const Acts::Vector3 anglesB = b.canonicalEulerAngles(2, 1, 0);
   for (int i = 0; i < 3; ++i) {
     const double diff = anglesA[i] - anglesB[i];
     if (std::abs(diff) > m_tolRot) {
