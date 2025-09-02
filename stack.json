@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "0b1249d0b007fc83514127b90c7d9ee1421490b2",
-  "head": "9925626464339d95a778222fdbf1546b81887f05",
-  "applied": [],
-  "unapplied": [
+  "prev": "8b77056d2c23a5aab53c0ae398d903634fb5664b",
+  "head": "34b4c714d107bf6d9e4d61883fdd3977491ee0ea",
+  "applied": [
     "const",
     "gcc13",
     "gcc14c",
@@ -14,36 +13,37 @@
     "optjac",
     "warn3"
   ],
+  "unapplied": [],
   "hidden": [
     "warn"
   ],
   "patches": {
     "const": {
-      "oid": "a3c697176846298776ed6cf2ce57c94862330ccb"
+      "oid": "e7d08984283acb191ea794088795e613f5fd8d62"
     },
     "gcc13": {
-      "oid": "83008dccb8051812c7dcede45b1ff82c6f372460"
+      "oid": "fadeb56654cc6c3efbaa28d55fdaa5b9dffb94e7"
     },
     "gcc14c": {
-      "oid": "c76598798bcefbb055bf1d143a43dbe2f39b308a"
+      "oid": "8afe2e757cfc3304e6b8b2aa4bd10a9b1741ddc4"
     },
     "clang": {
-      "oid": "70d8f89682ea8d191048429e2a9f41a0cfaddcc6"
+      "oid": "2d122911b113bd4369218acb5ea60cf3bda125bb"
     },
     "rename": {
-      "oid": "8d626eb502e49923b34f396fb9e351ca2f073f7e"
+      "oid": "632bff67cc4ab6a038d75445926f53a1b3aff51f"
     },
     "typo": {
-      "oid": "a8ca0a42574b47bfaeaf70ea0ff8a1236556d5bd"
+      "oid": "e131c340d5743dd859cd74ecc486a40407b2a57c"
     },
     "warn2": {
-      "oid": "47f81e0fef3be1776896803e29aa6a583a8cfea6"
+      "oid": "316a607394ff9e705739d3b881942984a84d18de"
     },
     "optjac": {
-      "oid": "7bfec3b9a5869632e58b8120fcac11cb23b82231"
+      "oid": "0a9f2c6c3bc4aa5bf4ea8fe4488eb8b9d3f36ebf"
     },
     "warn3": {
-      "oid": "edcd821755d9528fb084f295c9a503e1fb914285"
+      "oid": "34b4c714d107bf6d9e4d61883fdd3977491ee0ea"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
