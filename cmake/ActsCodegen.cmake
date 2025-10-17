@@ -24,53 +24,53 @@ if(NOT ACTS_USE_SYSTEM_LIBS)
 
     include(ActsEnsureUv)
 else()
-    message(
-        STATUS
-        "Configuring codegen in offline mode: preparing virtual environment"
-    )
+    # message(
+    #     STATUS
+    #     "Configuring codegen in offline mode: preparing virtual environment"
+    # )
 
-    find_package(Python REQUIRED COMPONENTS Interpreter)
+    # find_package(Python REQUIRED COMPONENTS Interpreter)
 
-    # The idea of the following code is to create a "nested" Python
-    # environment; we grab the source of the packages in the current env
-    # whether that is a virtual environment, a system environment, or a Spack
-    # environment, and copy that into a newly created virtual environment.
-    # This strategy comes from https://stackoverflow.com/a/75545634
-    # First, we grab the Python package directory for the outside environment.
-    execute_process(
-        COMMAND
-            ${Python_EXECUTABLE} -c
-            "import sysconfig; print(sysconfig.get_paths()['purelib'])"
-        OUTPUT_VARIABLE _python_package_dir
-        OUTPUT_STRIP_TRAILING_WHITESPACE
-    )
+    # # The idea of the following code is to create a "nested" Python
+    # # environment; we grab the source of the packages in the current env
+    # # whether that is a virtual environment, a system environment, or a Spack
+    # # environment, and copy that into a newly created virtual environment.
+    # # This strategy comes from https://stackoverflow.com/a/75545634
+    # # First, we grab the Python package directory for the outside environment.
+    # execute_process(
+    #     COMMAND
+    #         ${Python_EXECUTABLE} -c
+    #         "import sysconfig; print(sysconfig.get_paths()['purelib'])"
+    #     OUTPUT_VARIABLE _python_package_dir
+    #     OUTPUT_STRIP_TRAILING_WHITESPACE
+    # )
 
-    # Then we create a new virtual env using the venv package which is built
-    # into Python these days.
-    execute_process(
-        COMMAND ${Python_EXECUTABLE} -m venv ${CMAKE_BINARY_DIR}/codegen_venv
-    )
-    # Now, we get the package directory for the newly created virtual
-    # environment.
-    execute_process(
-        COMMAND
-            ${CMAKE_BINARY_DIR}/codegen_venv/bin/python -c
-            "import sysconfig; print(sysconfig.get_paths()['purelib'])"
-        OUTPUT_VARIABLE _python_nested_package_dir
-        OUTPUT_STRIP_TRAILING_WHITESPACE
-    )
+    # # Then we create a new virtual env using the venv package which is built
+    # # into Python these days.
+    # execute_process(
+    #     COMMAND ${Python_EXECUTABLE} -m venv ${CMAKE_BINARY_DIR}/codegen_venv
+    # )
+    # # Now, we get the package directory for the newly created virtual
+    # # environment.
+    # execute_process(
+    #     COMMAND
+    #         ${CMAKE_BINARY_DIR}/codegen_venv/bin/python -c
+    #         "import sysconfig; print(sysconfig.get_paths()['purelib'])"
+    #     OUTPUT_VARIABLE _python_nested_package_dir
+    #     OUTPUT_STRIP_TRAILING_WHITESPACE
+    # )
 
-    # Finally, we write the path found in the outside virtual env into the
-    # new virtual env as described in the StackOverflow answer.
-    file(
-        WRITE "${_python_nested_package_dir}/_base_packages.pth"
-        ${_python_package_dir}
-    )
+    # # Finally, we write the path found in the outside virtual env into the
+    # # new virtual env as described in the StackOverflow answer.
+    # file(
+    #     WRITE "${_python_nested_package_dir}/_base_packages.pth"
+    #     ${_python_package_dir}
+    # )
 
-    message(
-        STATUS
-        "Virtual environment based on ${_python_package_dir} created in ${CMAKE_BINARY_DIR}/codegen_venv/"
-    )
+    # message(
+    #     STATUS
+    #     "Virtual environment based on ${_python_package_dir} created in ${CMAKE_BINARY_DIR}/codegen_venv/"
+    # )
 endif()
 
 function(acts_code_generation)
@@ -115,30 +115,30 @@ function(acts_code_generation)
         list(APPEND _with_args "--with-requirements;${_requirement}")
     endforeach()
 
-    foreach(_requirement ${ARGS_WITH})
-        list(APPEND _with_args "--with;${_requirement}")
-        if(IS_DIRECTORY ${_requirement})
-            if(NOT ACTS_USE_SYSTEM_LIBS)
-                file(GLOB_RECURSE _depends_py ${_requirement}/*)
-                list(APPEND _depends ${_depends_py})
-            else()
-                # If we are not using uv, then we use pip to install the
-                # package into the virtual environment in the build directory.
-                # The --no-build-isolation flag ensures that we don't
-                # automatically download setuptools. The --no-index flag
-                # ensures that nothing can be downloaded ever, and the
-                # --no-deps is necessary to convince pip that the dependencies
-                # are already in the environment.
-                execute_process(
-                    COMMAND
-                        ${CMAKE_BINARY_DIR}/codegen_venv/bin/python -m pip
-                        install --no-build-isolation --no-index --no-deps
-                        ${_requirement}
-                    OUTPUT_QUIET
-                )
-            endif()
-        endif()
-    endforeach()
+    # foreach(_requirement ${ARGS_WITH})
+    #     list(APPEND _with_args "--with;${_requirement}")
+    #     if(IS_DIRECTORY ${_requirement})
+    #         if(NOT ACTS_USE_SYSTEM_LIBS)
+    #             file(GLOB_RECURSE _depends_py ${_requirement}/*)
+    #             list(APPEND _depends ${_depends_py})
+    #         else()
+    #             # If we are not using uv, then we use pip to install the
+    #             # package into the virtual environment in the build directory.
+    #             # The --no-build-isolation flag ensures that we don't
+    #             # automatically download setuptools. The --no-index flag
+    #             # ensures that nothing can be downloaded ever, and the
+    #             # --no-deps is necessary to convince pip that the dependencies
+    #             # are already in the environment.
+    #             execute_process(
+    #                 COMMAND
+    #                     ${CMAKE_BINARY_DIR}/codegen_venv/bin/python -m pip
+    #                     install --no-build-isolation --no-index --no-deps
+    #                     ${_requirement}
+    #                 OUTPUT_QUIET
+    #             )
+    #         endif()
+    #     endif()
+    # endforeach()
 
     get_filename_component(_output_name ${ARGS_OUTPUT} NAME)
 
@@ -150,46 +150,15 @@ function(acts_code_generation)
     get_filename_component(_output_dir ${_output_file} DIRECTORY)
     file(MAKE_DIRECTORY ${_output_dir})
 
-    if(NOT ACTS_USE_SYSTEM_LIBS)
-        # If using uv, run it in a clean environment but include the variables
-        # that specify a proxy.
-        set(_propagate
-            HTTP_PROXY
-            HTTPS_PROXY
-            ALL_PROXY
-            NO_PROXY
-            SSL_CERT_FILE
-        )
-        foreach(_var IN LISTS _propagate)
-            if(DEFINED ENV{${_var}})
-                list(APPEND _uv_environment "${_var}=$ENV{${_var}}")
-            endif()
-        endforeach()
-        add_custom_command(
-            OUTPUT ${_output_file}
-            COMMAND
-                env -i UV_NO_CACHE=1
-                UV_PYTHON_INSTALL_DIR=${ACTS_CODEGEN_TMPDIR}/python_install_dir
-                ${_uv_environment} ${uv_exe} run --quiet --python
-                ${ARGS_PYTHON_VERSION} --no-project ${_arg_isolated}
-                ${_with_args} ${ARGS_PYTHON} ${_output_file}
-            DEPENDS ${_depends}
-            COMMENT "Generating ${ARGS_OUTPUT}"
-            VERBATIM
-        )
-    else()
-        # If not using uv, just run Python from the virtual environment that
-        # we created above.
-        add_custom_command(
-            OUTPUT ${_output_file}
-            COMMAND
-                ${CMAKE_BINARY_DIR}/codegen_venv/bin/python ${ARGS_PYTHON}
-                ${_output_file}
-            DEPENDS ${_depends}
-            COMMENT "Generating ${ARGS_OUTPUT}"
-            VERBATIM
-        )
-    endif()
+    add_custom_command(
+        OUTPUT ${_output_file}
+        COMMAND
+            env PYTHONPATH=${CMAKE_SOURCE_DIR}/codegen/src:$ENV{PYTHONPATH} python
+            ${ARGS_PYTHON} ${_output_file}
+        DEPENDS ${_depends}
+        COMMENT "Generating ${ARGS_OUTPUT}"
+        VERBATIM
+    )
 
     set(_internal_target codegen_${_output_hash}_Internal)
     add_custom_target(${_internal_target} DEPENDS ${_output_file})
