@@ -13,6 +13,7 @@
 #include "Acts/Geometry/Layer.hpp"
 #include "Acts/Surfaces/CylinderBounds.hpp"
 #include "Acts/Surfaces/CylinderSurface.hpp"
+#include "Acts/Surfaces/SurfaceArray.hpp"
 
 #include <memory>
 
