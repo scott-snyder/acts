@@ -14,6 +14,7 @@
 
 #include <bitset>
 #include <optional>
+#include <cassert>
 
 #include "Eigen/Dense"
 
