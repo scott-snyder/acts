@@ -17,6 +17,7 @@ project(Acts VERSION ${_acts_version} LANGUAGES CXX)
 
 # Steers how project() handles the VERSION option
 cmake_policy(SET CMP0048 NEW)
+cmake_policy(SET CMP0144 NEW)
 
 # the `<project_name>_VERSION` variables set by `setup(... VERSION ...)` have
 # only local scope, i.e. they are not accessible her for dependencies added
