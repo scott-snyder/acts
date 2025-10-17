@@ -14,6 +14,7 @@
 #include <iomanip>
 #include <iostream>
 #include <stdexcept>
+#include <cassert>
 
 namespace Acts {
 

@@ -15,6 +15,7 @@
 
 #include <array>
 #include <limits>
+#include <cassert>
 
 #include "Eigen/Dense"
 
