@@ -8,6 +8,7 @@
 
 #include "Acts/Geometry/Extent.hpp"
 #include "Acts/Navigation/INavigationPolicy.hpp"
+#include "Acts/Surfaces/SurfaceArray.hpp"
 
 #pragma once
 
