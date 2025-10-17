@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "a619783089fdef4a8562baa33b463265aca99949",
-  "head": "98d78a09733d580578dbeb5f2bdd95a0c5b11d23",
+  "prev": "f8c1fd9aa4375e825b8c87d89d0c97c1a75b4d33",
+  "head": "68700b0d11a18764c7078ef628ca9888919c993c",
   "applied": [
     "const",
     "gcc13",
@@ -15,7 +15,8 @@
     "eigen",
     "codegen-py",
     "cmakewarn",
-    "assert"
+    "assert",
+    "surfacearray"
   ],
   "unapplied": [],
   "hidden": [
@@ -60,6 +61,9 @@
     },
     "assert": {
       "oid": "98d78a09733d580578dbeb5f2bdd95a0c5b11d23"
+    },
+    "surfacearray": {
+      "oid": "68700b0d11a18764c7078ef628ca9888919c993c"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
