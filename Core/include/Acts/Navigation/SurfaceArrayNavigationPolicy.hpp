@@ -7,6 +7,7 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "Acts/Navigation/INavigationPolicy.hpp"
+#include "Acts/Surfaces/SurfaceArray.hpp"
 
 #pragma once
 
