@@ -134,8 +134,7 @@ function(acts_code_generation)
     add_custom_command(
         OUTPUT ${_output_file}
         COMMAND
-            env -i UV_NO_CACHE=1 ${uv_exe} run --quiet --python
-            ${ARGS_PYTHON_VERSION} --no-project ${_arg_isolated} ${_with_args}
+            env PYTHONPATH=${CMAKE_SOURCE_DIR}/codegen/src:$ENV{PYTHONPATH} python
             ${ARGS_PYTHON} ${_output_file}
         DEPENDS ${_depends}
         COMMENT "Generating ${ARGS_OUTPUT}"
