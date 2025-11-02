@@ -199,30 +199,15 @@ function(acts_code_generation)
     get_filename_component(_output_dir ${_output_file} DIRECTORY)
     file(MAKE_DIRECTORY ${_output_dir})
 
-    if(NOT ACTS_USE_SYSTEM_LIBS)
-        add_custom_command(
-            OUTPUT ${_output_file}
-            COMMAND
-                env -i UV_NO_CACHE=1 ${uv_exe} run --quiet --python
-                ${ARGS_PYTHON_VERSION} --no-project ${_arg_isolated}
-                ${_with_args} ${ARGS_PYTHON} ${_output_file}
-            DEPENDS ${_depends}
-            COMMENT "Generating ${ARGS_OUTPUT}"
-            VERBATIM
-        )
-    else()
-        # If not using uv, just run Python from the virtual environment that
-        # we created above.
-        add_custom_command(
-            OUTPUT ${_output_file}
-            COMMAND
-                ${CMAKE_BINARY_DIR}/codegen_venv/bin/python ${ARGS_PYTHON}
-                ${_output_file}
-            DEPENDS ${_depends}
-            COMMENT "Generating ${ARGS_OUTPUT}"
-            VERBATIM
-        )
-    endif()
+    add_custom_command(
+        OUTPUT ${_output_file}
+        COMMAND
+            env PYTHONPATH=${CMAKE_SOURCE_DIR}/codegen/src:$ENV{PYTHONPATH} python
+            ${ARGS_PYTHON} ${_output_file}
+        DEPENDS ${_depends}
+        COMMENT "Generating ${ARGS_OUTPUT}"
+        VERBATIM
+    )
 
     set(_internal_target codegen_${_output_hash}_Internal)
     add_custom_target(${_internal_target} DEPENDS ${_output_file})
