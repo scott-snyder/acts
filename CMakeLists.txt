@@ -318,7 +318,7 @@ endif()
 
 if(ACTS_SETUP_EIGEN3)
     if(ACTS_USE_SYSTEM_EIGEN3)
-        find_package(Eigen3 ${_acts_eigen3_version} REQUIRED CONFIG)
+        find_package(Eigen3 REQUIRED CONFIG)
     else()
         add_subdirectory(thirdparty/eigen3)
     endif()
