@@ -1,6 +1,6 @@
 Bottom: 019786e9383900e3f32801f2030cff9aaeeba098
-Top:    283d75b6862093fc56e51b14d85def5d7dcbc894
+Top:    1d0a536ebe5530eff33210651b57bd32c60f22b6
 Author: sss <sss@karma>
-Date:   2025-10-17 11:42:04 -0400
+Date:   2025-11-05 22:25:45 -0500
 
 Just use python to run codegen; don't bother with uv.
