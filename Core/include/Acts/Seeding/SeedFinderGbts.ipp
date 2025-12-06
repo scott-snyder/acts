@@ -63,8 +63,6 @@ void SeedFinderGbts<external_spacepoint_t>::runGbts_TrackFinder(
 
   // 1. loop over stages
 
-  int currentStage = 0;
-
   const GbtsConnector& connector = *(gbtsGeo.connector());
 
   std::vector<GbtsEdge<external_spacepoint_t>> edgeStorage;
@@ -75,7 +73,7 @@ void SeedFinderGbts<external_spacepoint_t>::runGbts_TrackFinder(
 
   for (std::map<int, std::vector<GbtsConnector::LayerGroup>>::const_iterator
            it = connector.m_layerGroups.begin();
-       it != connector.m_layerGroups.end(); ++it, currentStage++) {
+       it != connector.m_layerGroups.end(); ++it) {
     // loop over L1 layers for the current stage
 
     for (const auto& layerGroup : (*it).second) {
