@@ -210,10 +210,9 @@ class GbtsTrackingFilter {
         }
       }
     } else {  // branching
-      int nBranches = 0;
       for (typename std::list<GbtsEdge<external_spacepoint_t>*>::iterator sIt =
                lCont.begin();
-           sIt != lCont.end(); ++sIt, nBranches++) {
+           sIt != lCont.end(); ++sIt) {
         propagate((*sIt), new_ts);  // recursive call
       }
     }
