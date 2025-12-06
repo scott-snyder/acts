@@ -170,8 +170,7 @@ void GbtsTrackingFilter::propagate(GbtsEdge& pS, GbtsEdgeState& ts) {
       }
     }
   } else {  // branching
-    int nBranches = 0;
-    for (auto sIt = lCont.begin(); sIt != lCont.end(); ++sIt, nBranches++) {
+    for (auto sIt = lCont.begin(); sIt != lCont.end(); ++sIt) {
       propagate(*(*sIt), new_ts);  // recursive call
     }
   }
