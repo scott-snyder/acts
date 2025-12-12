@@ -6,6 +6,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+#if __GNUC__ >= 16
+# pragma GCC diagnostic ignored "-Warray-bounds"
+#endif
 #include "Acts/Utilities/GraphViz.hpp"
 
 #include "Acts/Utilities/JoinStrings.hpp"
