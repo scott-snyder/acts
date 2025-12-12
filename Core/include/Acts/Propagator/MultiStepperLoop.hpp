@@ -308,6 +308,9 @@ class MultiStepperLoop final {
   using ComponentProxy =
       detail::LoopComponentProxy<typename State::Component, MultiStepperLoop>;
 
+  #if __GNUC__ >= 16
+  # pragma GCC diagnostic ignored "-Wunused-local-typedefs"
+  #endif
   /// Creates an iterable which can be plugged into a range-based for-loop to
   /// iterate over components
   /// @param state Multi-component stepper state to iterate over
