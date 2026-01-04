@@ -1,6 +1,0 @@
-Bottom: 354717e27c3e290389eb3701fc76a43a1eb3fe40
-Top:    354717e27c3e290389eb3701fc76a43a1eb3fe40
-Author: sss <sss@karma>
-Date:   2024-10-01 09:37:13 -0400
-
-Avoid two source files with the same name in Core.

@@ -1,6 +1,0 @@
-Bottom: d16156bc8306e4b6bb59311a56c506d9d78a7b84
-Top:    d16156bc8306e4b6bb59311a56c506d9d78a7b84
-Author: sss <sss@karma>
-Date:   2025-11-05 22:25:52 -0500
-
-Remove eigen version requirement.

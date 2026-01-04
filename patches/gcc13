@@ -1,8 +1,0 @@
-Bottom: b00ab56cf23df7742d03a67a47302d0ab2a1ea1e
-Top:    b00ab56cf23df7742d03a67a47302d0ab2a1ea1e
-Author: scott snyder <sss@karma>
-Date:   2022-11-30 11:27:32 -0500
-
-Fix compilation with gcc13.
-
-Missing #include <cstdint>.
