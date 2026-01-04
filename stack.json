@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "d5c46c80cecd2695cb6510d285837b9261bb3606",
-  "head": "0ff9268c98b07d9d7e61815aa7df59e55b3618d5",
+  "prev": "bba1f7ec0c51a73182942a42c182f7fb80446f02",
+  "head": "2bfee4e757cf82f4b066daa9394df01d4a60d344",
   "applied": [
     "const",
     "gcc13",
@@ -18,8 +18,7 @@
     "surfacearray",
     "eigenvers",
     "gcc16warn",
-    "gccbug-newxx",
-    "refresh-temp"
+    "gccbug-newxx"
   ],
   "unapplied": [],
   "hidden": [
@@ -72,10 +71,7 @@
       "oid": "ecc09dd7e9645e4b4e492205d51318e198245c55"
     },
     "gccbug-newxx": {
-      "oid": "fbbb8b921d515a9b1949375d08d75dc70a6ebd22"
-    },
-    "refresh-temp": {
-      "oid": "0ff9268c98b07d9d7e61815aa7df59e55b3618d5"
+      "oid": "2bfee4e757cf82f4b066daa9394df01d4a60d344"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
