@@ -79,6 +79,8 @@ class ProtoSurfaceMaterialT : public ISurfaceMaterial {
   /// Return the BinUtility
   const BinningType& binning() const { return (m_binning); }
 
+  using ISurfaceMaterial::materialSlab;
+
   /// Return method for full material description of the Surface - from local
   /// coordinates
   ///
