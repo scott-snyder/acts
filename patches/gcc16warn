@@ -1,8 +1,0 @@
-Bottom: 4de560d9e040444ceab7d0642feb6f3dc4c0f819
-Top:    4de560d9e040444ceab7d0642feb6f3dc4c0f819
-Author: sss <sss@karma>
-Date:   2025-12-06 15:00:15 -0500
-
-Fix warnings seen with gcc16.
-
-Unused variables.
