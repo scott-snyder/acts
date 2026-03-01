@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "e4c5441fd33947db61a1db1c848007ce67ea775f",
-  "head": "c476557b74ccc8369fe1ef2c1f2e27cca4a356b6",
-  "applied": [],
-  "unapplied": [
+  "prev": "fcfa589e7934db82e153165bc870001504b725ac",
+  "head": "079d9f463f4b476e1b60b3c4641d8940239e1696",
+  "applied": [
     "const",
     "gcc14c",
     "clang",
@@ -14,7 +13,9 @@
     "codegen-py",
     "cmakewarn",
     "surfacearray",
-    "gcc16warn",
+    "gcc16warn"
+  ],
+  "unapplied": [
     "gccbug-newxx"
   ],
   "hidden": [
@@ -22,37 +23,37 @@
   ],
   "patches": {
     "const": {
-      "oid": "7f8139c8d096d88ff683d24ca72d4a2c84592a72"
+      "oid": "2dbd7ef898e948bebff160ee4c9df44e0021f355"
     },
     "gcc14c": {
-      "oid": "48b98d45f209e95d4640cc6b49c5d5f6749304ed"
+      "oid": "b78cb0141beb5288ec9b11e84030d740d58c21fc"
     },
     "clang": {
-      "oid": "0e9a4665d890bb4333b97de42b8369e86661bce8"
+      "oid": "b31282d3d6ca7e2b644969ef30e6f98977afe868"
     },
     "typo": {
-      "oid": "a1faa3d32cf599b0a63a0fa05b48865ec38b2f02"
+      "oid": "2c8cbb07075ec1546e4fea50646a319134b91105"
     },
     "warn2": {
-      "oid": "2f5f36824a4d2acf487022c95e5e7d7639145bf5"
+      "oid": "f5aa59b86efe6ab5d216e4909e7e28876c412f8e"
     },
     "optjac": {
-      "oid": "902caecf090533d47fc322ae7eeaaac690f38f14"
+      "oid": "3cb885bd967ed1354063ed1f92154ff46bbf8251"
     },
     "warn3": {
-      "oid": "7cb824061ba73540c7e3109997ecaaa36147eba1"
+      "oid": "67e3ce79ad8887807f999c4cf23695cddec8b2aa"
     },
     "codegen-py": {
-      "oid": "9e75c38226ca7e9bc1949a77456941dd9e94e99d"
+      "oid": "c9dda795a58fc8f6e21c47cc67cbe62a47dbbb16"
     },
     "cmakewarn": {
-      "oid": "d61a104f6a9d083ff2fb00193d0768cdfb4c06c9"
+      "oid": "4c70b71a661f02d5254d6e7ecfb440a51bbe8024"
     },
     "surfacearray": {
-      "oid": "4732d68fb7f0513cdc35ae4d3d7da03a39f016c6"
+      "oid": "071a6125cf715bb24b9a477985c365542fe45c32"
     },
     "gcc16warn": {
-      "oid": "d00a115275bdd5fc95825f8d27753e08583702c7"
+      "oid": "079d9f463f4b476e1b60b3c4641d8940239e1696"
     },
     "gccbug-newxx": {
       "oid": "9f0ca73e821debadaa225386a05d2ff7631a9a7e"
