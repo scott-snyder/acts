@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "2b5db4ac8878409d3c8e8b3116cc53230741001f",
-  "head": "9f0ca73e821debadaa225386a05d2ff7631a9a7e",
-  "applied": [
+  "prev": "1d67d039078d2ca10687b286e6eb3f9630e1c73a",
+  "head": "92ab57740f8e875555ea28f542844ac1eb5db65b",
+  "applied": [],
+  "unapplied": [
     "const",
     "gcc14c",
     "clang",
@@ -16,7 +17,6 @@
     "gcc16warn",
     "gccbug-newxx"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
