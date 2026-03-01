@@ -256,8 +256,6 @@ class GridSurfaceMaterialT
     }
   }
 
-  using ISurfaceMaterial::materialSlab;
-
   /// @copydoc ISurfaceMaterial::materialSlab(const Vector2&) const
   const MaterialSlab& materialSlab(const Vector2& lp) const final {
     return m_materialAccessor.slab(m_grid, m_boundToGridLocal(lp));

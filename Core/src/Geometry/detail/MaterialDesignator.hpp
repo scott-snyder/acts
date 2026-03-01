@@ -113,8 +113,6 @@ class CylinderProtoDesignator : public DesignatorBase {
     }
   }
 
-  using DesignatorBase::merged;
-
   std::unique_ptr<DesignatorBase> merged(
       const DesignatorBase& other) const override {
     return other.merged(*this);
@@ -224,8 +222,6 @@ class CuboidProtoDesignator : public DesignatorBase {
     }
   }
 
-  using DesignatorBase::merged;
-
   std::unique_ptr<DesignatorBase> merged(
       const DesignatorBase& other) const override {
     return other.merged(*this);
@@ -321,8 +317,6 @@ class ISurfaceMaterialDesignator : public DesignatorBase {
       os << "<br/> at: " << face;
     }
   }
-
-  using DesignatorBase::merged;
 
   std::unique_ptr<DesignatorBase> merged(
       const DesignatorBase& other) const override {
