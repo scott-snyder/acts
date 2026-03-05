@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "7309c65b095db068cc8c2f5f264731ddfe622a9f",
-  "head": "e3f7b957086c73c520f4017e0569838f421078aa",
+  "prev": "25ef1a92c729c05976e4e8e1aeeecd915869bb31",
+  "head": "abb384b9e4e986e4b3e6b62a5e5e2b976a9d4fcb",
   "applied": [
     "const",
     "gcc14c",
@@ -13,48 +13,52 @@
     "codegen-py",
     "cmakewarn",
     "surfacearray",
-    "gccbug-newxx"
+    "gccbug-newxx",
+    "novdt"
   ],
   "unapplied": [],
   "hidden": [
     "warn"
   ],
   "patches": {
+    "clang": {
+      "oid": "5f18a633ed287fa6ca58b5af4320afa42ecb9347"
+    },
+    "cmakewarn": {
+      "oid": "df297b95d86f29ec1d27046ac09d2e5c121be3ce"
+    },
+    "codegen-py": {
+      "oid": "d5b6750ec087d506909b2161cdf61cd1ea479b5d"
+    },
     "const": {
       "oid": "2dbd7ef898e948bebff160ee4c9df44e0021f355"
     },
     "gcc14c": {
       "oid": "b78cb0141beb5288ec9b11e84030d740d58c21fc"
     },
-    "clang": {
-      "oid": "5f18a633ed287fa6ca58b5af4320afa42ecb9347"
+    "gccbug-newxx": {
+      "oid": "e3f7b957086c73c520f4017e0569838f421078aa"
     },
-    "typo": {
-      "oid": "38c308684052e22b379c83442b4b8131a7b9b485"
-    },
-    "warn2": {
-      "oid": "3e6eef673f2e8ca61a1499a22e8fe6bf1cc64fc7"
+    "novdt": {
+      "oid": "abb384b9e4e986e4b3e6b62a5e5e2b976a9d4fcb"
     },
     "optjac": {
       "oid": "98ce70c26df1551cac7a4e5bee66509519bdf744"
     },
-    "warn3": {
-      "oid": "bf9ca651e7e4da044c4ad2c93702fb93096bd3fa"
-    },
-    "codegen-py": {
-      "oid": "d5b6750ec087d506909b2161cdf61cd1ea479b5d"
-    },
-    "cmakewarn": {
-      "oid": "df297b95d86f29ec1d27046ac09d2e5c121be3ce"
-    },
     "surfacearray": {
       "oid": "5d53c8688c2cf4f2f078b74eca2f6e7d23c43fc7"
     },
-    "gccbug-newxx": {
-      "oid": "e3f7b957086c73c520f4017e0569838f421078aa"
+    "typo": {
+      "oid": "38c308684052e22b379c83442b4b8131a7b9b485"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
+    },
+    "warn2": {
+      "oid": "3e6eef673f2e8ca61a1499a22e8fe6bf1cc64fc7"
+    },
+    "warn3": {
+      "oid": "bf9ca651e7e4da044c4ad2c93702fb93096bd3fa"
     }
   }
 }
