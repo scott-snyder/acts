@@ -4,12 +4,18 @@
 if ( "${CMAKE_BUILD_TYPE}" STREQUAL "Debug" )
   set_source_files_properties(
      AnnulusBounds.cpp
+     ConeSurface.cpp
+     CylinderBounds.cpp
      CylinderSurface.cpp
      DiscSurface.cpp
+     LineSurface.cpp
      PlaneSurface.cpp
+     RectangleBounds.cpp
+     Surface.cpp
+     VerticesHelper.cpp
      DIRECTORY ../..
      PROPERTIES
-     COMPILE_FLAGS "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}"
+     COMPILE_FLAGS "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} -fvisibility-inlines-hidden "
      COMPILE_DEFINITIONS "FLATTEN" )
 endif()
 
