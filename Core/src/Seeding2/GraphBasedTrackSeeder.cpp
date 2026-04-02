@@ -166,7 +166,7 @@ std::vector<std::vector<GbtsNode>> GraphBasedTrackSeeder::createNodes(
     v.reserve(10000);
   }
 
-  for (const auto& sp : spacePoints) {
+  for (const auto sp : spacePoints) {
     // for every sp in container,
     // add its variables to nodeStorage organised by layer
     const std::uint16_t layer = sp.extra(layerColumn);
