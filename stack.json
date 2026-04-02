@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "031b49769b42d912847156bf21413521fcdd1be0",
-  "head": "b2398215951ea13907b6d7a6e7cde5355eb85d18",
+  "prev": "9c799e483d2fef86f02386c59e120a0ba1ee3e7b",
+  "head": "cf338d862c5bf72d8253bc2f0967c525a445ef55",
   "applied": [
     "const",
     "gcc14c",
@@ -10,14 +10,13 @@
     "warn2",
     "optjac",
     "warn3",
-    "codegen-py"
-  ],
-  "unapplied": [
+    "codegen-py",
     "cmakewarn",
     "surfacearray",
     "gccbug-newxx",
     "novdt"
   ],
+  "unapplied": [],
   "hidden": [
     "warn"
   ],
@@ -47,16 +46,16 @@
       "oid": "b2398215951ea13907b6d7a6e7cde5355eb85d18"
     },
     "cmakewarn": {
-      "oid": "df297b95d86f29ec1d27046ac09d2e5c121be3ce"
+      "oid": "fee05da0015ae0d75546103ac9781c607ac891aa"
     },
     "surfacearray": {
-      "oid": "5d53c8688c2cf4f2f078b74eca2f6e7d23c43fc7"
+      "oid": "195846ee41844795ef1c21f46835d179e2e87768"
     },
     "gccbug-newxx": {
-      "oid": "e3f7b957086c73c520f4017e0569838f421078aa"
+      "oid": "33af31eb5d2f2490acf1dd63402a95b0ab332731"
     },
     "novdt": {
-      "oid": "5fa8ead729e0751d83af4c3f83ec0a20ce45b13f"
+      "oid": "cf338d862c5bf72d8253bc2f0967c525a445ef55"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
