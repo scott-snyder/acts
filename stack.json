@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "9c799e483d2fef86f02386c59e120a0ba1ee3e7b",
-  "head": "cf338d862c5bf72d8253bc2f0967c525a445ef55",
+  "prev": "a834d04c8a30fc8bcf819e8672254e5b3928a9e6",
+  "head": "d26db0c57369cfee27828116ee88f6450b6d3364",
   "applied": [
-    "const",
     "gcc14c",
     "clang",
     "typo",
@@ -21,41 +20,38 @@
     "warn"
   ],
   "patches": {
-    "const": {
-      "oid": "9f68390ef68bc53c233f1033ed4c0353d5e0595b"
-    },
     "gcc14c": {
-      "oid": "31346b6539cd7ef7c239c66988a5042bdaf23198"
+      "oid": "cc7311477c15e51ff89d336d18fc379b987eed4c"
     },
     "clang": {
-      "oid": "6f29a6db7d97b58cada63085529c6aba1802c045"
+      "oid": "db246f45e9aa4cc1eeda048b00e259b99611b722"
     },
     "typo": {
-      "oid": "791a2b10cbeadaa8f38553f1da52be1e66fe7a2b"
+      "oid": "4aad3b6b44aed4a77318ca2ab3cc2c7711d29003"
     },
     "warn2": {
-      "oid": "1b45ba9befa6e9c745d1f7e92ca59f60e3f71d94"
+      "oid": "7c8485b6f21833e2cb6dcca11f672956db7dd51c"
     },
     "optjac": {
-      "oid": "fbec1b74e958ff5c2d95e80a549c67b31e226ef7"
+      "oid": "f9799eafcd49f868c9eb6ea2efd6692d42c2dadf"
     },
     "warn3": {
-      "oid": "6090d150e176c54ecdb7aaf97ef3f7310e646f84"
+      "oid": "4c4aca07845f8ebdc51e658a4927ff3caf8196bb"
     },
     "codegen-py": {
-      "oid": "b2398215951ea13907b6d7a6e7cde5355eb85d18"
+      "oid": "b02a41d6f2729b8b15af41076c26a1325897c085"
     },
     "cmakewarn": {
-      "oid": "fee05da0015ae0d75546103ac9781c607ac891aa"
+      "oid": "62fc582c57cf9af8159f79688fce8adb35568a42"
     },
     "surfacearray": {
-      "oid": "195846ee41844795ef1c21f46835d179e2e87768"
+      "oid": "8300ea827ee225be06b21681f3a5f83ab6603172"
     },
     "gccbug-newxx": {
-      "oid": "33af31eb5d2f2490acf1dd63402a95b0ab332731"
+      "oid": "433b8a02ea9d6334c12df431584e0321d88bdae7"
     },
     "novdt": {
-      "oid": "cf338d862c5bf72d8253bc2f0967c525a445ef55"
+      "oid": "d26db0c57369cfee27828116ee88f6450b6d3364"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"

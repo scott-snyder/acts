@@ -1,9 +1,0 @@
-Bottom: 08130609a768ed9564ecfa0a85ab8dcfb16d281d
-Top:    08130609a768ed9564ecfa0a85ab8dcfb16d281d
-Author: scott snyder <sss@karma>
-Date:   2021-12-02 16:23:56 -0500
-
-Add a couple missing const qualifiers.
-
-Fixes in passing warnings from clang12 in c++20 mode about comparision
-operator ambiguities.
