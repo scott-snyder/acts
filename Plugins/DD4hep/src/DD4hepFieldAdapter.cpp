@@ -27,9 +27,6 @@ DD4hepFieldAdapter::DD4hepFieldAdapter(dd4hep::OverlayedField field)
   m_lengthConversionFactor = dd4hep::_toDouble("1*mm") / UnitConstants::mm;
 }
 
-// Needs to be out-of-line to forward declare OverlayedField
-DD4hepFieldAdapter::~DD4hepFieldAdapter() = default;
-
 MagneticFieldProvider::Cache DD4hepFieldAdapter::makeCache(
     const MagneticFieldContext& /*mctx*/) const {
   return MagneticFieldProvider::Cache{};
