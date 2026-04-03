@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "d76c66316b27462cd4a1b7a1483ebf9ddd50d290",
-  "head": "c4031f80b7ea4841a1134f7a66ba0fdd75daf680",
+  "prev": "4b03b182dbf39f3f45ff2b01ff8d1efe796826c7",
+  "head": "05f4d098c5c09b75fb58688ddf56bf2d163a958b",
   "applied": [
     "gcc14c",
     "clang",
@@ -13,8 +13,7 @@
     "cmakewarn",
     "surfacearray",
     "gccbug-newxx",
-    "novdt",
-    "refresh-temp"
+    "novdt"
   ],
   "unapplied": [],
   "hidden": [
@@ -46,16 +45,13 @@
       "oid": "9e8376ca631ddf366b1333a15318b0e66923e5a0"
     },
     "surfacearray": {
-      "oid": "3d66e73fc58b83633191130eb38d909e9c97f92a"
+      "oid": "e3fa2650cadff74b3cc0c36b2888df6991f3b78a"
     },
     "gccbug-newxx": {
-      "oid": "f537a87050d6ed1ca419bd00b949d6514a76f08b"
+      "oid": "e687ec4eceb52c2815705aefbdb8a8aaf4d316f6"
     },
     "novdt": {
-      "oid": "4b08dfac5aa380834967c86e4e0144593954f616"
-    },
-    "refresh-temp": {
-      "oid": "c4031f80b7ea4841a1134f7a66ba0fdd75daf680"
+      "oid": "05f4d098c5c09b75fb58688ddf56bf2d163a958b"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
