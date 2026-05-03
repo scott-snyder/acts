@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "4b03b182dbf39f3f45ff2b01ff8d1efe796826c7",
-  "head": "05f4d098c5c09b75fb58688ddf56bf2d163a958b",
-  "applied": [
+  "prev": "116153bc0932870dda9f080e0c0be68e51fb08c6",
+  "head": "a28f778b767fb8fcf9eba5675aecc71e28e30d50",
+  "applied": [],
+  "unapplied": [
     "gcc14c",
     "clang",
     "typo",
@@ -15,7 +16,6 @@
     "gccbug-newxx",
     "novdt"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
