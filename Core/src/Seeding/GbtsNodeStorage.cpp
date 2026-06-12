@@ -78,7 +78,7 @@ void GbtsNodeStorage::extend(
     const ConstSpacePointColumnProxy<float>& clusterWidthColumn,
     const ConstSpacePointColumnProxy<float>& localPositionYColumn) {
   m_staged.reserve(m_staged.size() + spacePoints.size());
-  for (const auto& sp : spacePoints) {
+  for (const auto sp : spacePoints) {
     insert(sp, layerColumn, clusterWidthColumn, localPositionYColumn);
   }
 }
