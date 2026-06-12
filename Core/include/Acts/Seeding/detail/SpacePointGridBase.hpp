@@ -92,7 +92,7 @@ class SpacePointGridBase {
     ACTS_VERBOSE("Inserting " << spacePoints.size()
                               << " space points to the grid");
 
-    for (const ConstSpacePointProxy& sp : spacePoints) {
+    for (const ConstSpacePointProxy sp : spacePoints) {
       derived().insert(sp);
     }
   }
