@@ -874,7 +874,7 @@ class triplet_fitter {
     // Track angle covariances
     scalar sum_thth{};
     scalar sum_phph{};
-    scalar sum_thph{};
+    //scalar sum_thph{};
     // Track angle - curvature covariances
     scalar sum_c3D_th{};
     scalar sum_c3D_ph{};
@@ -896,8 +896,8 @@ class triplet_fitter {
 
         sum_thth += getter::element(hit_loc_corrmatrix, idx1, idx2) *
                     grads_theta[h1] * grads_theta[h2];
-        sum_thph += getter::element(hit_loc_corrmatrix, idx1, idx2) *
-                    grads_theta[h1] * grads_phi[h2];
+        //sum_thph += getter::element(hit_loc_corrmatrix, idx1, idx2) *
+        //            grads_theta[h1] * grads_phi[h2];
         sum_phph += getter::element(hit_loc_corrmatrix, idx1, idx2) *
                     grads_phi[h1] * grads_phi[h2];
       }

@@ -100,7 +100,7 @@ class geometry_reader {
       // Add the surfaces to the factories
       DETRAY_DEBUG_HOST("Discovered " << vol_data.surfaces.size()
                                       << " surfaces in volume payload");
-      for (const auto& [sf_idx, sf_data] :
+      for (const auto [sf_idx, sf_data] :
            detray::views::enumerate(vol_data.surfaces)) {
         const std::vector<mask_payload>& mask_data = sf_data.masks;
 
