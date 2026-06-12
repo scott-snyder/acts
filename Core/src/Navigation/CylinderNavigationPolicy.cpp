@@ -205,7 +205,7 @@ CylinderNavigationPolicy::CylinderNavigationPolicy(const GeometryContext& gctx,
     }
 
     diag << "  resulting face assignment:\n";
-    for (const auto& [i, portal] : enumerate(m_portals)) {
+    for (const auto [i, portal] : enumerate(m_portals)) {
       const auto face = static_cast<CylinderVolumeBounds::Face>(i);
       diag << "    " << faceName(face) << " -> ";
       if (portal == nullptr) {
