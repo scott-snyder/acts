@@ -88,7 +88,7 @@ Tensor<T> cudaMulPerColumn(const Tensor<T> &src, const Tensor<T> &scales,
 
 }  // namespace detail
 
-void sigmoid(Tensor<float> &tensor, std::optional<cudaStream_t> stream) {
+void sigmoid(Tensor<float> &tensor, [[maybe_unused]] std::optional<cudaStream_t> stream) {
   if (tensor.device().type == Device::Type::eCUDA) {
 #ifdef ACTS_GNN_WITH_CUDA
     return ActsPlugins::detail::cudaSigmoid(tensor, stream.value());
