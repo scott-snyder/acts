@@ -42,7 +42,7 @@ struct track_container {
     /// The track states used by the tracks
     track_state_collection<ALGEBRA>::buffer states;
     /// The measurements used by the tracks
-    measurement_collection::const_view measurements;
+    measurement_collection::const_view measurements {};
   };
 
   struct data {
