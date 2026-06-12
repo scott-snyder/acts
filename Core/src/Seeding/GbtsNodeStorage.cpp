@@ -91,7 +91,7 @@ void GbtsNodeStorage::extend(
   const bool strips =
       spacePoints.hasColumns(SpacePointColumns::StripCalibrationDetails);
   m_staged.reserve(m_staged.size() + spacePoints.size());
-  for (const auto& sp : spacePoints) {
+  for (const auto sp : spacePoints) {
     insert(sp, layerColumn, clusterWidthColumn, localPositionYColumn, strips);
   }
 }

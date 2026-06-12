@@ -97,7 +97,7 @@ class material_map_reader {
           std::make_shared<material_map_factory<detector_t, bin_index_type>>();
 
       // Convert the material grid of each surface
-      for (const auto &[idx, grid_data] : detray::views::enumerate(mat_grids)) {
+      for (const auto [idx, grid_data] : detray::views::enumerate(mat_grids)) {
         DETRAY_VERBOSE_HOST("Reading material map payload #" << idx << "...");
         // Get the number of bins per axis
         std::vector<std::size_t> n_bins{};
@@ -114,14 +114,14 @@ class material_map_reader {
         DETRAY_VERBOSE_HOST("-> Type id: " << map_id);
 
         DETRAY_VERBOSE_HOST("-> Reading axis bins: Dims = " << dim);
-        for ([[maybe_unused]] const auto &[i, count] :
+        for ([[maybe_unused]] const auto [i, count] :
              detray::views::enumerate(n_bins)) {
           DETRAY_VERBOSE_HOST("--> Axis " << i << ": " << count << " bins");
         }
         // Get the axis spans
         DETRAY_VERBOSE_HOST("-> Reading axis spans:");
         std::vector<std::vector<scalar_t>> axis_spans = {};
-        for (const auto &[i, axis_data] :
+        for (const auto [i, axis_data] :
              detray::views::enumerate(grid_data.axes)) {
           axis_spans.push_back({static_cast<scalar_t>(axis_data.edges.front()),
                                 static_cast<scalar_t>(axis_data.edges.back())});
@@ -144,7 +144,7 @@ class material_map_reader {
 
           // The local bin indices for the bin to be filled
           bin_index_type mbin;
-          for (const auto &[i, bin_idx] :
+          for (const auto [i, bin_idx] :
                detray::views::enumerate(bin_data.loc_index)) {
             mbin[i] = bin_idx;
           }
