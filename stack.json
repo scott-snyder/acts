@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "80cf614a999c825cf5c983f20b75776e0d314cd4",
-  "head": "b0884130f3fa7749793cf04fd9346d185ffb52aa",
+  "prev": "46ed8f0c0e54f08c6e51c93a9c82ec5d374a59a8",
+  "head": "f5d5a0922274e5d43c5aa5d64e1e6bcab359d50e",
   "applied": [
     "gcc14c",
     "clang",
@@ -13,8 +13,7 @@
     "cmakewarn",
     "surfacearray",
     "gccbug-newxx",
-    "warn4",
-    "refresh-temp"
+    "warn4"
   ],
   "unapplied": [],
   "hidden": [
@@ -52,10 +51,7 @@
       "oid": "058fa0166b3350e868a0e66a12db8a4efe6b3023"
     },
     "warn4": {
-      "oid": "c8591700ab3481b15891f6b3c1b23e38d7ce2ce1"
-    },
-    "refresh-temp": {
-      "oid": "b0884130f3fa7749793cf04fd9346d185ffb52aa"
+      "oid": "f5d5a0922274e5d43c5aa5d64e1e6bcab359d50e"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
