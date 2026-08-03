@@ -7,9 +7,9 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 // Local include(s).
-#include "read_particles.hpp"
+#include "read_particles_csv.hpp"
 
-#include "read_measurements.hpp"
+#include "read_measurements_csv.hpp"
 #include "traccc/io/csv/make_hit_reader.hpp"
 #include "traccc/io/csv/make_measurement_hit_id_reader.hpp"
 #include "traccc/io/csv/make_particle_reader.hpp"
