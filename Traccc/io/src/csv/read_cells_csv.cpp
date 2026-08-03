@@ -7,7 +7,7 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 // Local include(s).
-#include "read_cells.hpp"
+#include "read_cells_csv.hpp"
 
 #include "traccc/io/csv/make_cell_reader.hpp"
 #include "traccc/utils/logging.hpp"
