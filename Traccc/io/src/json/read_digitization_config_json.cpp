@@ -6,7 +6,7 @@
  */
 
 // Local include(s).
-#include "read_digitization_config.hpp"
+#include "read_digitization_config_json.hpp"
 
 // Acts include(s).
 #if __has_include(<ActsPlugins/Json/ActsJson.hpp>)
