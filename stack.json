@@ -1,11 +1,12 @@
 {
   "version": 5,
-  "prev": "6a95e1b09d1117f0f40ff4f9caaceed28e01eec2",
-  "head": "faaa032800ea10a3bb5fbcffbec350bcc49ab038",
-  "applied": [],
-  "unapplied": [
+  "prev": "426d32eb28006a7b3826a9557386474c5ff5e544",
+  "head": "b3becfa0e2b95737ffc7848bbca5be92f2ba5288",
+  "applied": [
     "gcc14c",
-    "clang",
+    "clang"
+  ],
+  "unapplied": [
     "typo",
     "warn2",
     "optjac",
@@ -21,10 +22,10 @@
   ],
   "patches": {
     "gcc14c": {
-      "oid": "f56ce900acf757c01a571ed17736aef2a2949434"
+      "oid": "094f240674731bb2aa27573213a2e8b99fb87c9d"
     },
     "clang": {
-      "oid": "043a6b90e3a4e82033dcdd60a70d48d49aedf8d1"
+      "oid": "b3becfa0e2b95737ffc7848bbca5be92f2ba5288"
     },
     "typo": {
       "oid": "f5c5b4352f68f2342933ff8294074172e01fd825"
