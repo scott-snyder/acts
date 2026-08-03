@@ -8,7 +8,7 @@
 // Local include(s).
 #include "traccc/io/read_digitization_config.hpp"
 
-#include "json/read_digitization_config.hpp"
+#include "json/read_digitization_config_json.hpp"
 #include "traccc/io/utils.hpp"
 
 // System include(s).

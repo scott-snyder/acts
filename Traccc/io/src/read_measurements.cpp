@@ -8,7 +8,7 @@
 // Local include(s).
 #include "traccc/io/read_measurements.hpp"
 
-#include "csv/read_measurements.hpp"
+#include "csv/read_measurements_csv.hpp"
 #include "read_binary.hpp"
 #include "traccc/io/utils.hpp"
 
