@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "b1facb5771e56328f07e4b0c99027c0232c5e20f",
-  "head": "01a04e35293db9543ed7109e69c3de9c823e3ee6",
+  "prev": "2911e638d2ecc6104dad67ab676549539a42c190",
+  "head": "7c1138580c3e7d6c5ce9295ab6e77a6f0ffa9e98",
   "applied": [
     "gcc14c",
-    "clang",
-    "refresh-temp"
+    "clang"
   ],
   "unapplied": [
     "typo",
@@ -26,10 +25,7 @@
       "oid": "094f240674731bb2aa27573213a2e8b99fb87c9d"
     },
     "clang": {
-      "oid": "b3becfa0e2b95737ffc7848bbca5be92f2ba5288"
-    },
-    "refresh-temp": {
-      "oid": "01a04e35293db9543ed7109e69c3de9c823e3ee6"
+      "oid": "7c1138580c3e7d6c5ce9295ab6e77a6f0ffa9e98"
     },
     "typo": {
       "oid": "f5c5b4352f68f2342933ff8294074172e01fd825"
