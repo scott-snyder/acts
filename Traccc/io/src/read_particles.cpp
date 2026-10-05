@@ -8,7 +8,7 @@
 // Local include(s).
 #include "traccc/io/read_particles.hpp"
 
-#include "csv/read_particles.hpp"
+#include "csv/read_particles_csv.hpp"
 #include "traccc/io/utils.hpp"
 
 // System include(s).

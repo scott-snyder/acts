@@ -8,7 +8,7 @@
 // Local include(s).
 #include "traccc/io/read_spacepoints.hpp"
 
-#include "csv/read_spacepoints.hpp"
+#include "csv/read_spacepoints_csv.hpp"
 #include "read_binary.hpp"
 #include "traccc/io/utils.hpp"
 
