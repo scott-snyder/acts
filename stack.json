@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "90885b2161d6223d4b081e43c72b0759201f89c7",
-  "head": "85b94d2c72e0cef8240b5c2c9a26f3ae7baade28",
-  "applied": [
+  "prev": "cf0c325923996d26c606998128b9aabaee6ca9b4",
+  "head": "2790f1b05c0c94cb3b569cbb18262b24867c7855",
+  "applied": [],
+  "unapplied": [
     "gcc14c",
     "clang",
     "typo",
@@ -16,7 +17,6 @@
     "warn4",
     "dupfiles"
   ],
-  "unapplied": [],
   "hidden": [
     "warn"
   ],
