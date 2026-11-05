@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "ee3e83b1b5ce03bc41bb82b5cf87bd380fb0b067",
-  "head": "fcdebde24e8d4252ffb2a392075ac80e68837ae2",
-  "applied": [],
-  "unapplied": [
+  "prev": "a83dbbe0dcdcdac83eb1ef19eeae2a8c0cf77c1c",
+  "head": "d5c38be60db800c9a046ad6c58fac989688d3ac5",
+  "applied": [
     "gcc14c",
     "clang",
     "typo",
@@ -12,7 +11,9 @@
     "warn3",
     "codegen-py",
     "cmakewarn",
-    "surfacearray",
+    "surfacearray"
+  ],
+  "unapplied": [
     "gccbug-newxx",
     "warn4",
     "dupfiles"
@@ -22,31 +23,31 @@
   ],
   "patches": {
     "gcc14c": {
-      "oid": "85f552112556b86ed8ff2e5236959b9361d1982d"
+      "oid": "62405a3d555529dbea5107443df31fba006bbcc8"
     },
     "clang": {
-      "oid": "50bdb805f4c9159967e755cd955e4dd5a0eb55bf"
+      "oid": "80239d761007b7f354e5c9f9446e109886525a14"
     },
     "typo": {
-      "oid": "4b1da2800d34fb88e8b7f05827637d8ae3c4b1e8"
+      "oid": "54d00fad81601ba61860b4ccd5a84434c9a7bb62"
     },
     "warn2": {
-      "oid": "d7a230a4e6e8e0882fef76a69c7b891b69d95e49"
+      "oid": "2ed3fb1be3433f7d4b4914406278bce51ef6aa38"
     },
     "optjac": {
-      "oid": "caeb0784be6618970a2da6a0455ae79221390cf0"
+      "oid": "61d80342ec3c0711562a79a3338f2444b0d3d7b9"
     },
     "warn3": {
-      "oid": "6bc69148a3156ec44ccf034ccc4706ddfd66b5ef"
+      "oid": "32a79644b5a320cce3d93f335a6a6130585cbfde"
     },
     "codegen-py": {
-      "oid": "8c407695e3518213f55324102dc715923bd31d9c"
+      "oid": "a8bbf46d387aa7bac30c95b0b330b82f3fcf8f15"
     },
     "cmakewarn": {
-      "oid": "68a9264f5417b1da75e63d8811eb65d9fe73ec53"
+      "oid": "598b451986a885f75ad1d8fb6eff8ffeaeb5e22d"
     },
     "surfacearray": {
-      "oid": "e1b17691acd5d94ffd777ac82668f4b79221ef8a"
+      "oid": "d5c38be60db800c9a046ad6c58fac989688d3ac5"
     },
     "gccbug-newxx": {
       "oid": "ed818849e070b4f75d2f5bfb0cde49e7e2fb78e2"
