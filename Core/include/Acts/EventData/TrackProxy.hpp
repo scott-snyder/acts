@@ -653,10 +653,10 @@ class TrackProxy
     }
 
     // `nextJacobian` holds the jacobian of the old first state
-    if (!invertJacobians || next == kInvalid || nextJacobian.isZero()) {
+    if (!invertJacobians || next == kInvalid || nextJacobian->isZero()) {
       return std::nullopt;
     }
-    return nextJacobian.inverse();
+    return nextJacobian->inverse();
   }
 
   /// @}
