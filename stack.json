@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "c5a4020837fd936f933b8caee0509dcdb9a8e2a1",
-  "head": "570cd49634b0145e96ace40bf2b6e499c7cdc1d2",
+  "prev": "298c2715714feb8501067ea4b464b2d0f151f2ac",
+  "head": "23ef06ac0c3403e62bc38e9fe83a3f91abd68223",
   "applied": [
     "gcc14c",
     "clang",
@@ -11,8 +11,7 @@
     "warn3",
     "codegen-py",
     "cmakewarn",
-    "surfacearray",
-    "refresh-temp"
+    "surfacearray"
   ],
   "unapplied": [
     "gccbug-newxx",
@@ -48,10 +47,7 @@
       "oid": "598b451986a885f75ad1d8fb6eff8ffeaeb5e22d"
     },
     "surfacearray": {
-      "oid": "d5c38be60db800c9a046ad6c58fac989688d3ac5"
-    },
-    "refresh-temp": {
-      "oid": "570cd49634b0145e96ace40bf2b6e499c7cdc1d2"
+      "oid": "23ef06ac0c3403e62bc38e9fe83a3f91abd68223"
     },
     "gccbug-newxx": {
       "oid": "ed818849e070b4f75d2f5bfb0cde49e7e2fb78e2"
