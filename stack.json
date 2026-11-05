@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "298c2715714feb8501067ea4b464b2d0f151f2ac",
-  "head": "23ef06ac0c3403e62bc38e9fe83a3f91abd68223",
+  "prev": "7bda096be878f9414da56b339fe5762af486b5d2",
+  "head": "e5302a0f9e3d1b8d9dd6cb455d221521e42785e5",
   "applied": [
     "gcc14c",
     "clang",
@@ -11,13 +11,12 @@
     "warn3",
     "codegen-py",
     "cmakewarn",
-    "surfacearray"
-  ],
-  "unapplied": [
+    "surfacearray",
     "gccbug-newxx",
     "warn4",
     "dupfiles"
   ],
+  "unapplied": [],
   "hidden": [
     "warn"
   ],
@@ -50,13 +49,13 @@
       "oid": "23ef06ac0c3403e62bc38e9fe83a3f91abd68223"
     },
     "gccbug-newxx": {
-      "oid": "ed818849e070b4f75d2f5bfb0cde49e7e2fb78e2"
+      "oid": "8b619cae6582b6d654c233b7d0e5471514091a31"
     },
     "warn4": {
-      "oid": "4d56a4c03d6305f158d8095fc561838794282753"
+      "oid": "cccc7a774ba6cb4f9069839fd53b9de94ea91c9a"
     },
     "dupfiles": {
-      "oid": "b9840b1884e5efd67ff19e8a149bae876acbf9bd"
+      "oid": "e5302a0f9e3d1b8d9dd6cb455d221521e42785e5"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
