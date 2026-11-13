@@ -1,0 +1,12 @@
+Bottom: 2a5bba99bb7eb710c63f29cc15c48e3dc0a9ef30
+Top:    2a5bba99bb7eb710c63f29cc15c48e3dc0a9ef30
+Author: sss <sss@karma>
+Date:   2026-11-13 17:18:20 -0500
+
+Suppress spurious FPEs seen with some Eigen versions.
+
+We had in a couple places m_iwidth = 1 / m_width, where the variables
+are vectors.  If DIM=3, this is vectorized as two division instruction,
+each handing two doubles.  But that means that the second lane of the
+second division is reading uninitialized memory.  The result is never used,
+so this wouldn't be a problem, except that it can cause FPEs.
