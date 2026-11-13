@@ -19,8 +19,12 @@ Acts::AxisAlignedBoundingBox<entity_t, value_t, DIM>::AxisAlignedBoundingBox(
       m_vmin(vmin),
       m_vmax(vmax),
       m_center((vmin + vmax) / 2.),
-      m_width(vmax - vmin),
-      m_iwidth(1 / m_width) {}
+      m_width(vmax - vmin)
+{
+  // Saying m_iwidth = 1 / m_width can lead to spurious FPEs if DIM is odd.
+  for (size_t i = 0; i < DIM; ++i)
+    m_iwidth[i] = 1 / m_width[i];
+}
 
 template <typename entity_t, typename value_t, std::size_t DIM>
 Acts::AxisAlignedBoundingBox<entity_t, value_t, DIM>::AxisAlignedBoundingBox(
@@ -29,8 +33,12 @@ Acts::AxisAlignedBoundingBox<entity_t, value_t, DIM>::AxisAlignedBoundingBox(
       m_vmin(center - size.get() * 0.5),
       m_vmax(center + size.get() * 0.5),
       m_center(center),
-      m_width(size.get()),
-      m_iwidth(1 / m_width) {}
+      m_width(size.get())
+{
+  // Saying m_iwidth = 1 / m_width can lead to spurious FPEs if DIM is odd.
+  for (size_t i = 0; i < DIM; ++i)
+    m_iwidth[i] = 1 / m_width[i];
+}
 
 template <typename entity_t, typename value_t, std::size_t DIM>
 Acts::AxisAlignedBoundingBox<entity_t, value_t, DIM>::AxisAlignedBoundingBox(
@@ -57,7 +65,10 @@ Acts::AxisAlignedBoundingBox<entity_t, value_t, DIM>::AxisAlignedBoundingBox(
 
   m_center = (m_vmin + m_vmax) / 2.;
   m_width = m_vmax - m_vmin;
-  m_iwidth = 1 / m_width;
+
+  // Saying m_iwidth = 1 / m_width can lead to spurious FPEs if DIM is odd.
+  for (size_t i = 0; i < DIM; ++i)
+    m_iwidth[i] = 1 / m_width[i];
 }
 
 template <typename entity_t, typename value_t, std::size_t DIM>
