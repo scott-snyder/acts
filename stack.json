@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "b1a9b23ab611967b9551084e7e48209ef2c06e70",
-  "head": "0923162f196d450434e16c9ad7eba952559e1ef8",
+  "prev": "b38247df856030675b6d8de6d7f35ad8e7353baa",
+  "head": "51fc1a81db12d76586f30c1e52ac366ea90bbd76",
   "applied": [
     "gcc14c",
     "clang",
@@ -15,8 +15,7 @@
     "gccbug-newxx",
     "warn4",
     "dupfiles",
-    "fpe.BoundingBox",
-    "refresh-temp"
+    "fpe.BoundingBox"
   ],
   "unapplied": [],
   "hidden": [
@@ -60,10 +59,7 @@
       "oid": "4bc60fd45e7e5c5d7d6722d9a286ef5e37f1e088"
     },
     "fpe.BoundingBox": {
-      "oid": "a744129a9a174277768e78d8739a5098e08c203f"
-    },
-    "refresh-temp": {
-      "oid": "0923162f196d450434e16c9ad7eba952559e1ef8"
+      "oid": "51fc1a81db12d76586f30c1e52ac366ea90bbd76"
     },
     "warn": {
       "oid": "f8011f556ff044ab3751e869cc95ff48b047c27d"
